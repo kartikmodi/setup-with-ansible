@@ -1,0 +1,53 @@
+---
+# tasks to complete before running roles
+- hosts: all
+  tags: always
+  become: true
+  pre_tasks:
+    - name: pre-run | update apt cache
+      tags: always
+      apt: update_cache=yes
+      changed_when: False
+      when: ansible_distribution == "Debian"
+
+# run roles
+- hosts: all
+  tags: base
+  become: true
+  roles:
+    - base
+
+- hosts: workstation
+  tags: workstation
+  become: true
+  roles:
+    - workstation
+
+
+  - name: copy .bashrc file
+    copy:
+     src: files/bashrc
+     dest: /home/jay/.bashrc
+     owner: jay
+     group: jay
+
+     
+  - name: add ansible user
+    user:
+      name: velociraptor
+      system: yes
+
+  - name: set up sudo for ansible user
+    copy:
+      src: files/sudoer_velociraptor
+      dest: /etc/sudoers.d/velociraptor
+      owner: root
+      group: root
+      mode: 0440
+
+  - name: add ansible-pull cron job
+    cron:
+      name: ansible auto-provision
+      user: velociraptor
+      minute: "*/10"
+      job: ansible-pull -o -U https://github.com/jlacroix82/ansible_pull_tutorial.git
