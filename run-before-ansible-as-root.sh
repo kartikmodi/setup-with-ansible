@@ -1,13 +1,10 @@
 # run from root
-su - username <<!
-enterpasswordhere
+$DEFAULT_USER=workstation
+su  <<!
+replaceYourPasswordHere
 sed -i '/sudo\tALL=(ALL:ALL)/c\%sudo\tALL=(ALL:ALL) NOPASSWD:ALL' /etc/sudoers
-/sbin/usermod -aG sudo workstationvm
+/sbin/usermod -aG sudo $DEFAULT_USER
 !
-
-echo replaceWithPassBeforeRunning | sudo -S -s \
-sed -i '/sudo   ALL=(ALL:ALL)/c\%sudo   ALL=(ALL:ALL) NOPASSWD:ALL' /etc/sudoers \
-&& usermod -aG sudo $DEFAULT_USER
 
 sudo apt update
 sudo apt upgrade
