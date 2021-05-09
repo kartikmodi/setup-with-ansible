@@ -1,0 +1,6 @@
+- name: software | authy | install package
+  tags: packages,authy,snap,workstation-packages
+  snap:
+    name:  authy
+    channel: latest/edge
+    state: present

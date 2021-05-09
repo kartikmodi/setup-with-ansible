@@ -1,0 +1,34 @@
+- name: create .ssh directory
+  tags: dotfiles,jay,ssh,users
+  file:
+    path: "{{ item.dir }}"
+    state: directory
+    owner: workstation
+    group: workstation
+    mode: 0700
+  with_items:
+    - { dir: '/home/workstation/.ssh' }
+#
+#- name: Check for already appended in /etc/fstab
+#  shell: grep 'Modis Custom Bashrc'
+#  changed_when: False
+#  register: shell_out_custom_bashrc
+
+#- name: Append to bashrc
+#  #  shell: cat users/workstation/bashrc_append_diff >> /home/workstation/.bashrc
+#  #  when: shell_out_custom_bashrc.stdout == ''
+#  lineinfile: dest=/home/workstation/.bashrc regexp="^(?!.*Modis).*$" line="{{ lookup('file', 'roles/base/files/users/workstation/bash/bashrc_append_diff') }}"
+
+- name: copy dotfiles
+  tags: dotfiles,users,jay,tmux,users,vim,zsh
+  copy:
+    src: users/workstation/{{ item.src }}
+    dest: /home/workstation/{{ item.dest }}
+    owner: workstation
+    group: workstation
+    mode: 0644
+    backup: yes
+  with_items:
+    - { src: 'bash/bash_aliases', dest: '.bash_aliases' }
+    - { src: 'bash/bash_functions', dest: '.bash_functions' }
+    - { src: 'vim/vimrc', dest: '.vimrc' }

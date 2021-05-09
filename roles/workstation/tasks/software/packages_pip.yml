@@ -1,0 +1,15 @@
+- name: system setup | pip packages | install bpytop
+  tags: bpytop,packages,pip,python
+  become_user: workstation
+  pip:
+    executable: /usr/local/bin/pip3
+    state: present
+    name: bpytop
+
+- name: software | boto | install package
+  tags: boto,packages,pip,python
+  become_user: jay
+  pip:
+    executable: /usr/local/bin/pip3
+    state: present
+    name: boto3

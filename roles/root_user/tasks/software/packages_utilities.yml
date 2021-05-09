@@ -1,0 +1,29 @@
+- name: system setup | utilities | install utility packages
+  tags: packages,system,settings
+  package:
+    state: present
+    name:
+      - colordiff
+      - curl
+      - "{{ dns_utils_package}}"
+      - htop
+      - iotop
+      - "{{ lm_sensors_package }}"
+      - lsof
+      - neofetch
+      - net-tools
+      - nmap
+      - rsync
+      - traceroute
+      - vim
+      - vim-runtime
+      - vim-doc
+      - vim-scripts
+      - vim-gtk3
+      - wget
+      - whois
+      - dkms
+      - "linux-headers-{{ ansible_kernel }}"
+      - vlc
+      - snapd
+      - flatpak
