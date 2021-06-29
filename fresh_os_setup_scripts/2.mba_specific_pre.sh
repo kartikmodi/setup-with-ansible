@@ -7,8 +7,9 @@ sudo apt -y install curl wget apt-transport-https dirmngr
 # Enable backports to install
 
 sudo apt -y install \
+  dkms build-essential linux-headers-$(uname -r) linux-image-$(uname -r) \
   broadcom-sta-dkms broadcom-sta-source broadcom-sta-common wireless-tools
-# broadcom line -> actual wifi drivers but should be from backports
-
+# broadcom line -> actual wifi drivers
+# Using uname -r will give exact kernel package version. Stick to this
 
 # Restart the machine with Wifi Working now
