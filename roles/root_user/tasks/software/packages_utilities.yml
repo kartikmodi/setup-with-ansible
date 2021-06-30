@@ -6,7 +6,6 @@
       - colordiff
       - curl
       - "{{ dns_utils_package}}"
-      - "{{ lm_sensors_package }}"
       - lsof
       - net-tools
       - nmap

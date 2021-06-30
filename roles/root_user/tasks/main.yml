@@ -2,20 +2,14 @@
 - include_vars: "{{ ansible_distribution }}.yml"
   tags: always
 
-
 - import_tasks: software/packages_utilities.yml
-- import
-    #  - import_tasks: software/packages_development.yml
-
-
-
-    #  - import_tasks: software/repositories.yml
-
-
-
-  #  rescue:
-  #    - set_fact: task_failed=true
-
+- import_tasks: software/development-packages.yml
+- import_tasks: software/resource-monitoring.yml
+- import_tasks: software/vim.yml
+- import_tasks: software/jdk.yml
+- import_tasks: software/pythonic.yml
+- import_tasks: software/misc-packages.yml
+  #- import_tasks: software/solaar.yml
 
 
 
