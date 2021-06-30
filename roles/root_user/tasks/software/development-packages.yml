@@ -3,7 +3,5 @@
   package:
     name:
       - git
-      - python3-setuptools
-      - python-pip
       - build-essential
     state: present

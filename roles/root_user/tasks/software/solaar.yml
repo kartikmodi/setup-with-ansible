@@ -1,4 +1,4 @@
-- name: software | install workstation distribution packages
+- name: solaar
   tags: packages,workstation-packages
   package:
     name: solaar

@@ -1,0 +1,9 @@
+- name: resource monitoring
+  tags: monitoring
+  package:
+    state: present
+    name:
+      - htop
+      - iotop
+      - "{{ lm_sensors_package }}"
+      - neofetch

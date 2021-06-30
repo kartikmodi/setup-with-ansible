@@ -1,0 +1,7 @@
+- name: pythonic
+  tags: dev,development,packages,python
+  package:
+    name:
+      - python3-setuptools
+      - python-pip
+    state: present

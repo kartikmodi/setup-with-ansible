@@ -1,0 +1,10 @@
+- name: vim
+  tags: vim
+  package:
+    state: present
+    name:
+      - vim
+      - vim-runtime
+      - vim-doc
+      - vim-scripts
+      - vim-gtk3
