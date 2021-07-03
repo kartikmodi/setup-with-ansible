@@ -1,0 +1,10 @@
+- name: multimedia
+  tags: multimedia
+  package:
+    name:
+      - gimp
+      - openshot-doc
+      - openshot-qt-doc
+      - openshot-qt
+      - openshot
+    state: present

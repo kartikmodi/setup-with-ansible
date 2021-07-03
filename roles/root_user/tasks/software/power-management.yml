@@ -1,0 +1,11 @@
+# TODO https://github.com/d4nj1/TLPUI/wiki/Install-instructions#ubuntudebian-family
+# FYI https://linrunner.de/tlp/faq/powertop.html
+- name: power-management
+  tags: power,battery
+  package:
+    name:
+      - tlp
+      - tlp-rdw
+      - powertop
+    state: present
+

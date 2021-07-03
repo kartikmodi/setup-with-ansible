@@ -18,3 +18,8 @@
       - vlc
       - snapd
       - flatpak
+      - synaptic
+      - software-properties-gtk
+      - tree
+      - modprobe
+      - rfkill
