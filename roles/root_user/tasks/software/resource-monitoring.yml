@@ -7,3 +7,9 @@
       - iotop
       - "{{ lm_sensors_package }}"
       - neofetch
+      - intel-gpu-tools
+      - iftop
+      - nethogs
+      - sysstat
+      - vnstat
+      - procps

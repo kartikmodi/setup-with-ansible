@@ -7,4 +7,5 @@
       - openshot-qt-doc
       - openshot-qt
       - openshot
+      - vlc
     state: present

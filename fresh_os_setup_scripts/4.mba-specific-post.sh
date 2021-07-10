@@ -3,18 +3,19 @@
 # https://wiki.debian.org/wl for BCM4360 in air
 # Enable backports to install
 
-sudo apt -y install \
-  dkms build-essential linux-headers-$(uname -r) linux-image-$(uname -r) \
-  broadcom-sta-dkms
+# The below command is supposed to be installed. Just type the right uname -r as per kernel wanting to run
+#sudo apt -y install \
+# dkms build-essential linux-headers-$(uname -r) linux-image-$(uname -r)\
+# broadcom-sta-dkms
 # broadcom line -> actual wifi drivers
 # Using uname -r will give exact kernel package version. Stick to this
 
 # This should some warning of firmware missing possible missing firmware /lib/firmware/i915/ for module i915
 # https://unix.stackexchange.com/questions/556946/possible-missing-firmware-lib-firmware-i915-for-module-i915
 sudo apt -y install \
-  firmware-linux-nonfree firmware-linux-free firmware-linux intel-microcode\
+  firmware-misc-nonfree intel-microcode \
   ansible-lint ansible
- # firmware packages linux
+# firmware packages linux. Do not install as it installs packages which are not required for MBA
 
 # Restart the machine with Wifi Working now
 

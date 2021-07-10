@@ -1,0 +1,12 @@
+- name: package management
+  tags: packages,system,settings
+  package:
+    state: present
+    name:
+      - snapd
+      - flatpak
+      - synaptic
+      - software-properties-gtk
+      - apt-rdepends
+      - apt-file
+      -

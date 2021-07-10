@@ -1,0 +1,6 @@
+- name: productivity
+  tags: productivity
+  package:
+    name:
+      - yakuake
+    state: present

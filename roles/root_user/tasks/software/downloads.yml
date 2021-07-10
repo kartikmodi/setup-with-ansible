@@ -1,0 +1,11 @@
+- name: downloads
+  tags: downloads
+  package:
+    name:
+      - aria2
+      - biglybt
+      - frostwire
+      - tribler
+      - uGet
+      -
+    state: present

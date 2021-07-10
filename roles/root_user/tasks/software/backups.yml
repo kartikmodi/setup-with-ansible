@@ -1,2 +1,10 @@
+- name: backups
+  tags: backups
+  package:
+    name:
+      - rsync
+      - timeshift
+      - unison
+    state: present
 
-timeshift
+
