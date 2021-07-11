@@ -4,7 +4,6 @@
     repo: deb https://repo.scala-sbt.org/scalasbt/debian all main
     state: present
     filename: sbt
-    update_cache: yes
   register: sbt_repo
 
 - name: jvm | scala | add repository old
@@ -13,7 +12,6 @@
     repo: deb https://repo.scala-sbt.org/scalasbt/debian /
     state: present
     filename: sbt_old
-    update_cache: yes
   register: sbt_old_repo
 
 - name: jvm | scala | add key
