@@ -1,27 +1,36 @@
 - name: jvm | scala | add repository
   tags: jvm
-  ansible.builtin.apt_repository:
+  apt_repository:
     repo: deb https://repo.scala-sbt.org/scalasbt/debian all main
     state: present
     filename: sbt
+    update_cache: yes
+  register: sbt_repo
 
-- name: jvm | scala | add repository
+- name: jvm | scala | add repository old
   tags: jvm
-  ansible.builtin.apt_repository:
+  apt_repository:
     repo: deb https://repo.scala-sbt.org/scalasbt/debian /
     state: present
     filename: sbt_old
+    update_cache: yes
+  register: sbt_old_repo
 
 - name: jvm | scala | add key
   tags: jvm
-  ansible.builtin.apt_key:
+  apt_key:
     id: 0x2EE0EA64E40A89B84B2DF73499E82A75642AC823
     url: https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823
     state: present
 
-- name: jvm
+- name: sbt | update sources (repo added or changed)
+  apt:
+    update_cache: yes
+  changed_when: False
+  when: sbt_repo.changed or sbt_old_repo.changed
+
+- name: jvm | install
   tags: jvm
-  update_cache: yes
   package:
     name:
       - openjdk-11-dbg

@@ -14,7 +14,7 @@
 # https://unix.stackexchange.com/questions/556946/possible-missing-firmware-lib-firmware-i915-for-module-i915
 sudo apt -y install \
   firmware-misc-nonfree intel-microcode \
-  ansible-lint ansible
+  ansible-lint ansible dconf-editor python3-psutil dconf-cli python3-apt
 # firmware packages linux. Do not install as it installs packages which are not required for MBA
 
 # Restart the machine with Wifi Working now
