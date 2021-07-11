@@ -1,7 +1,7 @@
 - name: jvm | scala | add key
   tags: jvm
   apt_key:
-    id: 0x2EE0EA64E40A89B84B2DF73499E82A75642AC823
+    id: "0x2EE0EA64E40A89B84B2DF73499E82A75642AC823"
     url: https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823
     state: present
 
@@ -42,7 +42,7 @@
       - openjdk-11-jre
       - openjdk-11-source
       - scala
-    #      - sbt
+      - sbt
     state: present
 
 
