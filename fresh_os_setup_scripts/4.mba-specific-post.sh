@@ -20,3 +20,7 @@ sudo apt -y install \
 # Restart the machine with Wifi Working now
 
 #TODO ansible-doc is not available in testing debian for some reason so need to manually download and install sid version
+
+echo 1|sudo tee /sys/module/hid_apple/parameters/swap_opt_cmd
+echo 1|sudo tee /sys/module/hid_apple/parameters/swap_fn_leftctrl
+echo 2|sudo tee /sys/module/hid_apple/parameters/fnmode
