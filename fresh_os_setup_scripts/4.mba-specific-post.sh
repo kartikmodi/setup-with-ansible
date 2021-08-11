@@ -21,6 +21,12 @@ sudo apt -y install \
 
 #TODO ansible-doc is not available in testing debian for some reason so need to manually download and install sid version
 
-echo 1|sudo tee /sys/module/hid_apple/parameters/swap_opt_cmd
-echo 1|sudo tee /sys/module/hid_apple/parameters/swap_fn_leftctrl
-echo 2|sudo tee /sys/module/hid_apple/parameters/fnmode
+#echo 1|sudo tee /sys/module/hid_apple/parameters/swap_opt_cmd
+#echo 1|sudo tee /sys/module/hid_apple/parameters/swap_fn_leftctrl
+#echo 2|sudo tee /sys/module/hid_apple/parameters/fnmode
+
+#https://unix.stackexchange.com/questions/121395/on-an-apple-keyboard-under-linux-how-do-i-make-the-function-keys-work-without-t
+echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf
+echo options hid_apple swap_opt_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
+echo options hid_apple swap_fn_leftctrl=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
+sudo update-initramfs -u -k all

@@ -13,3 +13,4 @@
       - sysstat
       - vnstat
       - procps
+      - lshw

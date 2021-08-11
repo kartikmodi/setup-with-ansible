@@ -1,15 +1,14 @@
 # Load distro-specific variables
-#- include_vars: "{{ ansible_distribution }}.yml"
-#  tags: always
-#- name: Install the correct web server for RHEL
-- block:
-  - import_tasks: software/jvm.yml
-  #- import_tasks: software/packages-utilities.yml
-  #- import_tasks: software/development-packages.yml
-  #- import_tasks: software/resource-monitoring.yml
-  #- import_tasks: software/vim.yml
-#- import_tasks: software/pythonic.yml
-#- import_tasks: software/misc-packages.yml
+- include_vars: "{{ ansible_distribution }}.yml"
+  tags: always
+
+- import_tasks: software/jvm.yml
+- import_tasks: software/packages-utilities.yml
+- import_tasks: software/development-packages.yml
+- import_tasks: software/vim.yml
+- import_tasks: software/pythonic.yml
+- import_tasks: software/misc-packages.yml
+#  - import_tasks: software/resource-monitoring.yml
   #- import_tasks: software/solaar.yml
 
 

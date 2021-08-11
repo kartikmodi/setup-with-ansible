@@ -1,23 +1,23 @@
 ---
 # tasks to complete before running roles
-#- hosts: 127.0.0.1
-#  tags: always
-#  become: true
+- hosts: 127.0.0.1
+  tags: always
+  become: true
 #  connection: local
-#  pre_tasks:
-#    - name: pre-run | update apt cache
-#      tags: always
-#      apt: update_cache=yes
-#      changed_when: False
-#      when: ansible_distribution == "Debian"
+  pre_tasks:
+    - name: pre-run | update apt cache
+      tags: always
+      apt: update_cache=yes
+      changed_when: False
+      when: ansible_distribution == "Debian"
 
 # run roles
 - hosts: 127.0.0.1
   tags: root_user
-  #  become: true
+  become: true
   #  become_user: workstation
   #  connection: local
-  become: true
+#  become: true
   roles:
     - root_user
 #    - role: workstation

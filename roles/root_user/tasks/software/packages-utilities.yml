@@ -16,5 +16,4 @@
       - dkms
       - "linux-headers-{{ ansible_kernel }}"
       - tree
-      - modprobe
       - rfkill

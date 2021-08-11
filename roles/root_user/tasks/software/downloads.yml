@@ -7,5 +7,4 @@
       - frostwire
       - tribler
       - uGet
-      -
     state: present
