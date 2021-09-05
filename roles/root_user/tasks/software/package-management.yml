@@ -9,4 +9,8 @@
       - software-properties-gtk
       - apt-rdepends
       - apt-file
-      -
+      - apt-transport-https
+
+#- name: Install appimagelauncher
+#  apt:
+#    deb: https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher_2.2.0-travis995.0f91801.bionic_amd64.deb

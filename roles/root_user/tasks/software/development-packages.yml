@@ -5,7 +5,4 @@
       - git
       - build-essential
       - dkms
-#      - code
-#      - atom
-      - yakuake
     state: present

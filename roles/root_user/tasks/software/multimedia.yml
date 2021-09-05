@@ -3,9 +3,25 @@
   package:
     name:
       - gimp
-      - openshot-doc
+#      - openshot-doc
       - openshot-qt-doc
       - openshot-qt
-      - openshot
+#      - openshot
       - vlc
+      - vlc-plugin-bittorrent
+      - vlc-plugin-fluidsynth
+      - vlc-plugin-jack
+      - vlc-plugin-svg
+      - mpv
+      - handbrake
+      - kdenlive
+      - obs
+      - inkspace
+#      - photoGIMP
+#      - Akira
+    - #Krita
+#      - digiKam
+#      - darktable
+#      strawberry music player
     state: present
+

@@ -3,8 +3,8 @@
   package:
     name:
       - aria2
-      - biglybt
-      - frostwire
-      - tribler
-      - uGet
+#      - biglybt
+#      - frostwire
+#      - tribler
+      - uget
     state: present

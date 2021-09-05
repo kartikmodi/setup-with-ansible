@@ -15,7 +15,7 @@ shopt -s histappend               # append to history, don't overwrite it
 shopt -s cdspell
 
 #PATH Settings
-export PATH="$PATH:/usr/local/sbin:/usr/sbin:/sbin:/home/workstation/Dropbox/cscripts"
+export PATH="/opt/firefox:$PATH:/usr/local/sbin:/usr/sbin:/sbin:/home/workstation/codes/cscripts"
 #export PROMPT_COMMAND='history -a'
 #export PROMPT_COMMAND='history -a; history -r'
 

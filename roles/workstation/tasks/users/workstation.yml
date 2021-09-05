@@ -1,5 +1,5 @@
 - name: create .ssh directory
-  tags: dotfiles,jay,ssh,users
+  tags: ssh
   file:
     path: "{{ item.dir }}"
     state: directory
@@ -24,8 +24,6 @@
   copy:
     src: users/workstation/{{ item.src }}
     dest: /home/workstation/{{ item.dest }}
-    owner: workstation
-    group: workstation
     mode: 0644
     backup: yes
   with_items:

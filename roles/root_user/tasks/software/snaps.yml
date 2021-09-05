@@ -2,5 +2,4 @@
   tags: snaps
   snap:
     name: authy
-    channel: latest/edge
     state: present

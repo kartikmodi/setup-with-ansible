@@ -2,11 +2,5 @@
 - include_vars: "{{ ansible_distribution }}.yml"
   tags: always
 
-- block:
-    ## User configs
-    #    - import_tasks: users/work.yml
-
-    ## desktop environments
-    - import_tasks: software/packages_pip.yml
-  rescue:
-    - set_fact: task_failed=true
+- import_tasks: users/workstation.yml
+- import_tasks: software/appimages.yml

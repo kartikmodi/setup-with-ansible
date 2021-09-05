@@ -1,0 +1,22 @@
+- name: Check app image directory exist
+  stat:
+    path: /home/workstation/Applications
+  register: is_appimage_dir_exist
+
+- name: "Ansible Create directory if not exists"
+  file:
+   path: /home/workstation/Applications
+   state: directory
+  when: not is_appimage_dir_exist.stat.exists
+
+- name: Check Joplin exist
+  stat:
+    path: /home/workstation/Applications/Joplin.AppImage
+  register: is_joplin_exist
+
+- name: Download Joplin
+  get_url:
+    url: https://github.com/laurent22/joplin/releases/download/v2.3.5/Joplin-2.3.5.AppImage
+    dest: /home/workstation/Applications/Joplin.AppImage
+    mode: 0744
+  when : not is_joplin_exist.stat.exists

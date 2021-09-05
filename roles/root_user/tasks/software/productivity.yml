@@ -3,4 +3,7 @@
   package:
     name:
       - yakuake
+      - byobu
+      - flameshot
+      - plasma-browser-integration
     state: present

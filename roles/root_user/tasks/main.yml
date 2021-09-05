@@ -8,7 +8,15 @@
 - import_tasks: software/vim.yml
 - import_tasks: software/pythonic.yml
 - import_tasks: software/misc-packages.yml
-#  - import_tasks: software/resource-monitoring.yml
+- import_tasks: software/resource-monitoring.yml
+- import_tasks: software/package-management.yml
+- import_tasks: software/browsers-with-apt.yml
+- import_tasks: software/firefox-nightly.yml
+- import_tasks: software/productivity.yml
+- import_tasks: software/snaps.yml
+- import_tasks: software/multimedia.yml
+- import_tasks: software/downloads.yml
+- import_tasks: software/resource-monitoring.yml
   #- import_tasks: software/solaar.yml
 
 

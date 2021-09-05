@@ -1,0 +1,37 @@
+- name: software | firefox-nightly | is-firefox-installed
+  tags: firefox-nightly
+  stat:
+    path: /opt/firefox
+  register: is_firefox_installed_register
+
+- name: software | firefox-nightly | extract
+  tags: firefox-nightly
+  ansible.builtin.shell:
+    cmd: 'curl -L "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US" --output - | sudo tar -xvj -C /opt/'
+  when: not is_firefox_installed_register.stat.exists
+
+- name: software | firefox-nightly | is-policy-installed
+  tags: firefox-nightly
+  stat:
+    path: /opt/firefox/distribution/policies.json
+  register: is_policy_installed
+
+- name: copy policy.json
+  tags: firefox-nightly
+  ansible.builtin.copy:
+    src: files/firefox-nightly/distribution
+    dest: /opt/firefox/
+  when: not is_policy_installed.stat.exists
+
+- name: software | firefox-nightly | is-ff-desktop-entry-installed
+  tags: firefox-nightly
+  stat:
+    path: /usr/share/applications/firefox-nightly.desktop
+  register: is_ff_desktop_entry_installed
+
+- name: software | firefox-nightly | desktop-entry
+  tags: firefox-nightly
+  ansible.builtin.copy:
+    src: files/firefox-nightly/firefox-nightly.desktop
+    dest: /usr/share/applications/firefox-nightly.desktop
+  when: not is_ff_desktop_entry_installed.stat.exists
