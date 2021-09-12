@@ -1,0 +1,14 @@
+- name: software | install workstation distribution packages
+  tags: packages,workstation-packages
+  package:
+    name:
+      - libnotify-bin
+      - libqt5positioning5
+      - libqt5location5
+      - qtlocation5-dev
+      - qtpositioning5-dev
+      - qml-module-qtlocation
+      - qml-module-qtpositioning
+      - smartmontools
+      - hddtemp
+      - qml-module-qtgraphicaleffects

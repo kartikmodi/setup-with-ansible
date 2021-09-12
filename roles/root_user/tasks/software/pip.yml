@@ -1,0 +1,6 @@
+- name: Install glances
+  pip:
+    name:
+      - glances
+      - pipdeptree
+

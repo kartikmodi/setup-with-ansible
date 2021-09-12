@@ -1,0 +1,1 @@
+Shortcuts -> Kwin -> Show Desktop Grid -> Remove as Ctrl+F8 conflicts with Byobu session rename

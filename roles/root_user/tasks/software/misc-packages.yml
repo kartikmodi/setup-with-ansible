@@ -3,6 +3,7 @@
   package:
     name:
       - dconf-editor
-      - gparted
       - pavucontrol
       - simplescreenrecorder
+      - solaar
+      - remmina

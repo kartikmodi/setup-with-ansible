@@ -1,5 +1,0 @@
-- name: solaar
-  tags: packages,workstation-packages
-  package:
-    name: solaar
-    state: latest

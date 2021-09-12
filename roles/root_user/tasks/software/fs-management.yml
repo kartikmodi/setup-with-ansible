@@ -1,0 +1,6 @@
+- name: software | fs management
+  tags: packages,workstation-packages
+  package:
+    name:
+      - gnome-disk-utility
+      - gparted

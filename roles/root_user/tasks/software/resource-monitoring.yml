@@ -5,7 +5,7 @@
     name:
       - htop
       - iotop
-      - "{{ lm_sensors_package }}"
+      - "{{ lm_sensors_package }}" # run  after install sudo sensors-detect
       - neofetch
       - intel-gpu-tools
       - iftop
@@ -15,3 +15,10 @@
       - procps
       - lshw
       - iptraf
+#      - glances #Amazing
+      - hardinfo # Nice
+      - monitorix
+      - iperf3
+      - cbm
+      - nload
+      - bwm-ng

@@ -1,0 +1,1 @@
+echo Y | sudo tee /sys/module/zswap/parameters/enabled

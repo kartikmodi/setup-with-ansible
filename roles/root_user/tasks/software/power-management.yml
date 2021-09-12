@@ -4,8 +4,11 @@
   tags: power,battery
   package:
     name:
-      - tlp
+      - tlp # sudo systemctl status tlp; sudo tlp-stat -s
       - tlp-rdw
       - powertop
+      - linux-cpupower
+      - cpupower-gui
+      - cpufrequtils
     state: present
 

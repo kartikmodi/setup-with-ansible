@@ -17,3 +17,10 @@
       - "linux-headers-{{ ansible_kernel }}"
       - tree
       - rfkill
+      - mesa-utils
+      - oomd # very important . OOM killer in user space
+
+- name: Install the spotify flatpak
+  community.general.flatpak:
+    name:  io.github.Qalculate
+    state: present

@@ -14,14 +14,18 @@
       - vlc-plugin-svg
       - mpv
       - handbrake
-      - kdenlive
-      - obs
-      - inkspace
+      - mplayer
+      - obs-plugins
+      - obs-studio
+#      - kdenlive
+#      - obs
+#      - inkspace
 #      - photoGIMP
 #      - Akira
-    - #Krita
+#    - #Krita
 #      - digiKam
 #      - darktable
 #      strawberry music player
     state: present
+
 

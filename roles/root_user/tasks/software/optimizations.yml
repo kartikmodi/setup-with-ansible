@@ -1,0 +1,6 @@
+- name: optimizations | install
+  tags: optimizations
+  package:
+    name:
+      - zram-tools
+    state: present
