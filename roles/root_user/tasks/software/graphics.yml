@@ -1,0 +1,11 @@
+- name: graphics
+  tags: graphics
+  package:
+    state: present
+    name:
+      - intel-media-va-driver-non-free
+      - mesa-vulkan-drivers
+      - libvulkan1
+      - mesa-va-drivers
+      - mesa-vdpau-drivers
+      - mesa-utils

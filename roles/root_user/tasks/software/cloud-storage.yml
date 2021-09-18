@@ -7,5 +7,6 @@
       - megasync
       - dolphin-megasync
       - rclone
-      -
+      - pcloud
+      - cozydrive
     state: present

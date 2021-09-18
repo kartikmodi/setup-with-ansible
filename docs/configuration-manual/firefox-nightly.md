@@ -96,3 +96,8 @@ user_pref("browser.cache.disk.hashstats_reported", 1);
 
 Reference -
 https://gist.github.com/sar/8325562bceac2bdb671e682f5f416dfb
+
+
+# DNS over https 
+# https://ahadns.com/dns-over-https/
+https://doh.chi.ahadns.net/dns-query

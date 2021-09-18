@@ -37,3 +37,5 @@ Vimium C
 VPN Free - betternet
 Windscribe
 Youtube Nonstop
+
+Privacy Possum - Manual Download - https://github.com/cowlicks/privacypossum -> Unzip - src -> Load Unpacked from Browser extensions page

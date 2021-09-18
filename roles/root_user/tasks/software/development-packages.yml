@@ -5,4 +5,6 @@
       - git
       - build-essential
       - dkms
+      - dnsutils
+      - wireshark
     state: present
