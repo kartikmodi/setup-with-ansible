@@ -9,3 +9,6 @@
       - mesa-va-drivers
       - mesa-vdpau-drivers
       - mesa-utils
+      - intel-gpu-tools
+      - intel-microcode
+      - vulkan-tools

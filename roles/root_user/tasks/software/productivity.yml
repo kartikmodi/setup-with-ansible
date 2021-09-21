@@ -7,3 +7,8 @@
       - flameshot
       - plasma-browser-integration
     state: present
+
+- name: Install the spotify flatpak
+  community.general.flatpak:
+    name:  io.github.Qalculate
+    state: present

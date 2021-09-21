@@ -68,6 +68,8 @@ browser.bookmarks.showMobileBookmarks true
 media.ffmpeg.vaapi.enabled true
 media.gpu-process-decoder true
 media.hardware-video-decoding.force-enabled true
+toolkit.tabbox.switchByScrolling true
+
 
 Needed if whatsapp QR isn't working
 # network.http.spdy.websockets
@@ -78,24 +80,20 @@ Needed if whatsapp QR isn't working
 webgl.force-enabled
 webgl.msaa-force
 
-# Disk Cache
+# Disk Cache 
 browser.cache.disk.smart_size.enabled false
-# 2 GB approx
+# 3 GB approx
 browser.cache.disk.capacity  3000000
 browser.cache.disk.max_chunks_memory_usage 81920 (2x40960 default)
 browser.cache.disk.max_entry_size   102400 (2x 51200 default)
 browser.cache.disk.max_priority_chunks_memory_usage 81920 (2x40960 default)
 browser.cache.disk.metadata_memory_limit 500 (2x 250 default)
 browser.cache.disk.preload_chunk_count 8 (2x4 default)
-qq
-
-
-user_pref("browser.cache.disk.filesystem_reported", 1);
-user_pref("browser.cache.disk.hashstats_reported", 1);
 
 
 Reference -
-https://gist.github.com/sar/8325562bceac2bdb671e682f5f416dfb
+
+
 
 
 # DNS over https 

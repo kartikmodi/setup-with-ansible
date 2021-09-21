@@ -1,7 +1,7 @@
 chrome://flags 
 GPU rasterization On
-Hardware-accelerated video decode On # requires intel-media-va-driver-non-free 
-Vulkan On # requires intel-media-va-driver-non-free , mesa-vulkan-drivers, libvulkan1, mesa-va-drivers mesa-vdpau-drivers mesa-vulkan-drivers
+Hardware-accelerated video decode On
+Vulkan On
 
 
 Extensions - 

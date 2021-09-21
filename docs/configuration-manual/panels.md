@@ -10,3 +10,12 @@
     * Settings
     * Dolphin
     * Firefox  
+
+Widgets - 
+netspeed
+Fan1 Fan2
+Temperature
+CPU 
+CPU Per core
+Memory 
+Swap
