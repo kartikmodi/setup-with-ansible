@@ -2,8 +2,8 @@
   tags: dns
   package:
     name:
-      - resolvconf
-      - dnscrypt-proxy
+      - dnscrypt-proxy # use this for dns requests
+#      - resolvconf # Required only if using windscribe
     state: present
 
 #- name: blank original etc/resolv.conf

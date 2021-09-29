@@ -17,33 +17,33 @@
       - protonvpn-cli
     state: present
 
-# Windscribe
-- name: software | vpn | windscribe
-  tags: windscribe
-  ansible.builtin.apt_key:
-    keyserver: keyserver.ubuntu.com
-    id: FDC247B7
-
-- name: software | vpn | windscribe repository
-  tags: windscribe
-  apt_repository:
-    repo: deb https://repo.windscribe.com/debian buster main
-    state: present
-    filename: windscribe-repo
-  register: windscribe_repo
-
-- name: windscribe | update sources (repo added or changed)
-  tags: windscribe
-  apt:
-    update_cache: yes
-  changed_when: False
-  when: windscribe_repo.changed
-
-- name: software | vpn | windscribe
-  tags: windscribe
-  package:
-    name:
-      - windscribe-cli
-    state: present
+## Windscribe
+#- name: software | vpn | windscribe
+#  tags: windscribe
+#  ansible.builtin.apt_key:
+#    keyserver: keyserver.ubuntu.com
+#    id: FDC247B7
+#
+#- name: software | vpn | windscribe repository
+#  tags: windscribe
+#  apt_repository:
+#    repo: deb https://repo.windscribe.com/debian buster main
+#    state: present
+#    filename: windscribe-repo
+#  register: windscribe_repo
+#
+#- name: windscribe | update sources (repo added or changed)
+#  tags: windscribe
+#  apt:
+#    update_cache: yes
+#  changed_when: False
+#  when: windscribe_repo.changed
+#
+#- name: software | vpn | windscribe
+#  tags: windscribe
+#  package:
+#    name:
+#      - windscribe-cli
+#    state: present
 
 

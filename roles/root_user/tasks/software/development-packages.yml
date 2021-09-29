@@ -7,4 +7,6 @@
       - dkms
       - dnsutils
       - wireshark
+      - pandoc
+      - texlive
     state: present

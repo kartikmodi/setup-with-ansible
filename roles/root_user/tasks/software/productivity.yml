@@ -4,6 +4,7 @@
     name:
       - yakuake
       - byobu
+      - hollywood
       - flameshot
       - plasma-browser-integration
     state: present

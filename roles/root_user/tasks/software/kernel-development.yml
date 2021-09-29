@@ -9,6 +9,7 @@
       - cpp-10-doc
       - libstdc++-10-doc
       - libstdc++-10-dev
+      - libstdc++6-10-dbg
       - gcc # gcc (Debian 10.3.0-9) 10.3.0
       - gcc-10
       - gcc-10-base
@@ -33,4 +34,5 @@
       - gdb-doc
       - gdb
       - gdb-source
+      - cscope
     state: present
