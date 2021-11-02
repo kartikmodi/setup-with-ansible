@@ -24,6 +24,8 @@
 - import_tasks: software/backups.yml
 - import_tasks: software/fonts.yml
 - import_tasks: software/virtualization.yml
+- import_tasks: software/kernel-programming.yml
+- import_tasks: software/kernel-development.yml
 #- import_tasks: software/dns.yml
 #- import_tasks: software/vpn.yml
 

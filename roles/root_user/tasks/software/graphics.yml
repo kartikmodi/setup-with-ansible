@@ -12,3 +12,4 @@
       - intel-gpu-tools
       - intel-microcode
       - vulkan-tools
+      - libva-glx2

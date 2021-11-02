@@ -1,0 +1,1 @@
+1. Download vmware player from https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html

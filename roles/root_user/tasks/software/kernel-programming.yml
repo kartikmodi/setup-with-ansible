@@ -1,0 +1,39 @@
+- name: system setup | kernel programming | install packages
+  tags: kernel-programming
+  package:
+    name:
+      - g++
+      - g++-10
+      - cpp
+      - cpp-10
+      - cpp-10-doc
+      - libstdc++-10-doc
+      - libstdc++-10-dev
+      - libstdc++6-10-dbg
+      - gcc # gcc (Debian 10.3.0-9) 10.3.0
+      - gcc-10
+      - gcc-10-base
+      - gcc-10-doc
+      - gcc-10-source
+      - manpages-dev
+      - build-essential
+      - libc6 # standard c library
+      - libc6-dbg # debugging symbols
+      - libc6-dev
+      - glibc-doc
+      - glibc-source
+      - glibc-doc-reference
+      - make
+      - make-doc
+      - dpkg-dev
+      - linux-source
+      - cmake-curses-gui
+      - cmake
+      - cmake-data
+      - cmake-doc
+      - cmake-qt-gui
+      - gdb-doc
+      - gdb
+      - gdb-source
+      - cscope
+    state: present

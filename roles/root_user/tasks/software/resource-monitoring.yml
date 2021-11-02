@@ -7,6 +7,7 @@
       - iotop
       - "{{ lm_sensors_package }}" # run  after install sudo sensors-detect
       - neofetch
+      - screenfetch
       - intel-gpu-tools
       - iftop
       - nethogs
@@ -25,3 +26,5 @@
       - atop
       - conky
       - lshw-gtk
+      - cpu-checker
+#      - fancontrol # Doesn't work on x1c

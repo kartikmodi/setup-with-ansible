@@ -1,38 +1,26 @@
+# Refer https://medium.com/@daeseok.youn/prepare-the-environment-for-developing-linux-kernel-with-qemu-c55e37ba8ade
 - name: system setup | kernel development | install packages
   tags: kernel-development
   package:
     name:
-      - g++
-      - g++-10
-      - cpp
-      - cpp-10
-      - cpp-10-doc
-      - libstdc++-10-doc
-      - libstdc++-10-dev
-      - libstdc++6-10-dbg
-      - gcc # gcc (Debian 10.3.0-9) 10.3.0
-      - gcc-10
-      - gcc-10-base
-      - gcc-10-doc
-      - gcc-10-source
-      - manpages-dev
       - build-essential
-      - libc6 # standard c library
-      - libc6-dbg # debugging symbols
-      - libc6-dev
-      - glibc-doc
-      - glibc-source
-      - glibc-doc-reference
+#      - kernel-package
+      - fakeroot
+      - libncurses5-dev
+      - libssl-dev
+      - ccache
+      - bison
+      - libelf-dev
+      - git
+      - make-doc
       - make
-      - dpkg-dev
-      - linux-source
-      - cmake-curses-gui
+      - bison-doc
+      - bison
       - cmake
-      - cmake-data
       - cmake-doc
-      - cmake-qt-gui
-      - gdb-doc
-      - gdb
-      - gdb-source
-      - cscope
+      - libssl-dev
+      - flex
+      - flex-doc
+      - ncurses-dev
     state: present
+

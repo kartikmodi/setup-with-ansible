@@ -1,0 +1,12 @@
+- name: Install glances
+  pip:
+    name:
+      - postgresql-doc
+      - postgresql-doc-13
+      - postgresql
+      - postgresql-13
+      - postgresql-client-13
+      - postgresql-client-common
+      - postgresql-common
+      - libpq-dev
+

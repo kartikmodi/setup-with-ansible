@@ -9,4 +9,11 @@
       - wireshark
       - pandoc
       - texlive
+      - freerdp2-x11
+      - remmina
+#      - https://rtyley.github.io/bfg-repo-cleaner/ add the steps
+
     state: present
+
+
+Install draw.io package

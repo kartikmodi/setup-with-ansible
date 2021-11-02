@@ -27,7 +27,7 @@ uGet Integration
 Vimium C
 Web Archives
 Youtube NonStop
-
+Video DownloadHelper with https://www.downloadhelper.net/install-coapp?browser=firefox
 
 Disabled - 
 Adblock Plus
@@ -90,6 +90,8 @@ browser.cache.disk.max_priority_chunks_memory_usage 81920 (2x40960 default)
 browser.cache.disk.metadata_memory_limit 500 (2x 250 default)
 browser.cache.disk.preload_chunk_count 8 (2x4 default)
 
+# Usability
+dom.event.clipboardevents.enabled false
 
 Reference -
 

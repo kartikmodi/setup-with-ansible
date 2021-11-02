@@ -109,4 +109,14 @@ alias vpnd='sudo protonvpn d'
 alias vpns='sudo protonvpn s'
 alias vpnc2='windscribe connect Canal'
 alias vpnd2='windscribe disconnect'
+mop1='h275-3.cs.rutgers.edu'
+mop2='h416-2.cs.rutgers.edu'
+mcv1='basic.cs.rutgers.edu'
+mcv2='pascal.cs.rutgers.edu'
+host1=$mop1
+host2=$mcv2
+alias rdp1d="xfreerdp /cert-ignore /v:$host1 /size:1920x1140 /u:km1449 /p:9461483617 /auto-reconnect-max-retries:0 /smart-sizing /sound +clipboard -wallpaper"
+alias rdp2d="xfreerdp /cert-ignore /v:$host2 /size:1920x1140 /u:km1449 /p:9461483617 /auto-reconnect-max-retries:0 /smart-sizing /sound +clipboard -wallpaper"
+alias rdp1g="xfreerdp /g:rdgateway.rutgers.edu /gu:km1449 /gp:modi\@RutgerNetId /v:$host1 /u:km1449 /p:9461483617 /d:rad /auto-reconnect-max-retries:0 /size:1920x1140 /smart-sizing /sound +clipboard -wallpaper"
+alias rdp2g="xfreerdp /g:rdgateway.rutgers.edu /gu:km1449 /gp:modi\@RutgerNetId /v:$host2 /u:km1449 /p:9461483617 /d:rad /auto-reconnect-max-retries:0 /size:1920x1140 /smart-sizing /sound +clipboard -wallpaper"
 
