@@ -34,3 +34,7 @@ export PAGER=less
 export VISUAL=vim
 export BROWSER=firefox
 export QT_DEBUG_PLUGINS=1
+
+export YOUR_LINUX_DEV_UTILS_PATH="/home/workstation/workspace/IdeaProjects/linux-dev-utils"
+export YOUR_LINUX_SRC_PATH="/home/workstation/workspace/CLionProjects/linux"
+
