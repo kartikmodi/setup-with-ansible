@@ -1,6 +1,9 @@
 # Dependencies to install packages with apt
 sudo apt -y install curl wget apt-transport-https dirmngr
 
+# clean upgade
+sudo apt upgrade 
+
 # existing kernel
 sudo apt -y install build-essential linux-headers-$(uname -r) linux-image-$(uname -r)
 
