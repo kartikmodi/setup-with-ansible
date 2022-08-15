@@ -115,7 +115,7 @@ MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xht
 Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
-Name=New Window PRO
+Name=New Window
 Name[am]=አዲስ መስኮት
 Name[ar]=نافذة جديدة
 Name[bg]=Нов прозорец
@@ -169,7 +169,7 @@ Name[zh_TW]=開新視窗
 Exec=__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only /usr/bin/google-chrome-unstable --enable-unsafe-webgpu --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,Vulkan --ignore-gpu-blacklist --enable-gpu-rasterization --enable-native-gpu-memory-buffers --enable-zero-copy --enable-logging --v=1 --enable-raw-draw --enable-drdc --disk-cache-size=2147483647
 
 [Desktop Action new-private-window]
-Name=New Incognito Window PRO
+Name=New Incognito Window
 Name[ar]=نافذة جديدة للتصفح المتخفي
 Name[bg]=Нов прозорец „инкогнито“
 Name[bn]=নতুন ছদ্মবেশী উইন্ডো
