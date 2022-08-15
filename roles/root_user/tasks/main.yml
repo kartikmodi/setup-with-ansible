@@ -3,6 +3,7 @@
   tags: always
 
 - import_tasks: software/jvm.yml
+- import_tasks: software/intel.yml
 - import_tasks: software/packages-utilities.yml
 - import_tasks: software/development-packages.yml
 - import_tasks: software/vim.yml

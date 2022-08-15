@@ -1,0 +1,6 @@
+- name: software | gaming
+  tags: gaming
+  package:
+    name:
+      - steam # install manuall asks agreement
+      - goverlay

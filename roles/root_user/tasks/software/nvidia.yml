@@ -63,3 +63,9 @@
       - nvidia-vulkan-icd
       - nvidia-vulkan-icd:i386
       - xserver-xorg-video-nvidia
+      - libnvcuvid1
+      - libnvidia-encode1
+      - libcuda1
+      - libcuda1:i386
+      - libnvcuvid1:i386
+      - nvidia-cuda-mps

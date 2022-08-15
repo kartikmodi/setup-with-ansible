@@ -10,5 +10,5 @@
       - qml-module-qtlocation
       - qml-module-qtpositioning
       - smartmontools
-      - hddtemp
+#      - hddtemp
       - qml-module-qtgraphicaleffects

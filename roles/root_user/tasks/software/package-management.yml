@@ -14,6 +14,7 @@
 # Add step for this when flatpak is installed
 # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-- name: Install appimagelauncher
-  apt:
-    deb: https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher_2.2.0-travis995.0f91801.bionic_amd64.deb
+# update to latest version, then run
+#- name: Install appimagelauncher
+#  apt:
+#    deb: https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher_2.2.0-travis995.0f91801.bionic_amd64.deb
