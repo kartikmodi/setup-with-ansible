@@ -12,3 +12,4 @@
       - smartmontools
 #      - hddtemp
       - qml-module-qtgraphicaleffects
+      - kde-config-tablet
