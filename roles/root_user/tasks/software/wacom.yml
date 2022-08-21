@@ -1,0 +1,14 @@
+- name: software | wacom
+  tags: wacom
+  package:
+    name:
+      - kde-config-tablet
+      - libwacom-bin
+      - libwacom-common
+      - xserver-xorg-input-wacom
+      - xournalpp
+      - openboard
+
+
+
+
