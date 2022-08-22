@@ -7,9 +7,13 @@
       - hollywood
       - flameshot
       - plasma-browser-integration
+      - scrcpy
+      - thunderbird
+      - shellcheck
     state: present
 
 - name: Install the spotify flatpak
   community.general.flatpak:
-    name:  io.github.Qalculate
+    name: io.github.Qalculate
     state: present
+#skreen-1.0.11.AppImage

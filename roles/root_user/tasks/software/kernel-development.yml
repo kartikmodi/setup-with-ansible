@@ -22,5 +22,6 @@
       - flex
       - flex-doc
       - ncurses-dev
+      - linux-perf
     state: present
 

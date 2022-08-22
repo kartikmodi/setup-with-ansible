@@ -15,6 +15,9 @@
   package:
     name:
       - protonvpn-cli
+      - protonvpn
+      - protonvpn-stable-release
+      - protonvpn-gui
     state: present
 
 ## Windscribe

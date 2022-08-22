@@ -7,4 +7,5 @@
 #      - frostwire
 #      - tribler
       - uget
+      - wget2
     state: present

@@ -28,4 +28,4 @@
 #      strawberry music player
     state: present
 
-
+#  flatpak install flathub com.github.wwmm.pulseeffects

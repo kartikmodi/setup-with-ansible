@@ -1,16 +1,13 @@
 # Dependencies to install packages with apt
 sudo apt -y install curl wget apt-transport-https dirmngr
 
-# clean upgade
-sudo apt upgrade 
-
 # existing kernel
 sudo apt -y install build-essential linux-headers-$(uname -r) linux-image-$(uname -r)
 
 # reboot recommended
 
 # installing drivers and basic tools
-sudo apt install firmware-linux firmware-linux-free firmware-linux-nonfree intel-media-va-driver-non-free intel-microcode git vim htop apt-file
+sudo apt install -t bullseye-backports firmware-linux firmware-linux-free firmware-linux-nonfree intel-media-va-driver-non-free intel-microcode git vim htop apt-file
 #sudo apt install iwlwifi # dont install, wifi and bluetooth did worked without this installed
 
 # reboot recommended
