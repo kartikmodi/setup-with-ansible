@@ -13,3 +13,4 @@
       - intel-microcode
       - vulkan-tools
       - libva-glx2
+      - gddccontrol

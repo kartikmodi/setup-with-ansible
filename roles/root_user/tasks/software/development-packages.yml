@@ -11,9 +11,16 @@
       - texlive
       - freerdp2-x11
       - remmina
+      - nodejs
+      - npm
+      - android-sdk
+      - android-sdk-build-tools
+      - android-sdk-build-tools-common
+      - android-sdk-common
+      - android-sdk-platform-tools
+      - android-sdk-platform-tools-common
 #      - https://rtyley.github.io/bfg-repo-cleaner/ add the steps
+      state: present
 
-    state: present
 
-
-Install draw.io package
+#Install draw.io package
