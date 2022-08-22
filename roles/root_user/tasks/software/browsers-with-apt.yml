@@ -1,10 +1,12 @@
 # Google Chrome
 - name: software | google-chrome | add key
+  tags: google-chrome
   ansible.builtin.apt_key:
     url: https://dl.google.com/linux/linux_signing_key.pub
     state: present
 
 - name: software | google-chrome | add repository
+  tags: google-chrome
   apt_repository:
     repo: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
     filename: google-chrome
@@ -13,12 +15,20 @@
   when: ansible_distribution in ["Debian"]
 
 - name: software | google-chrome | update sources (repo added or changed)
+  tags: google-chrome
   apt:
     update_cache: yes
   changed_when: False
   when: chrome_repo.changed
 
 - name: software | google-chrome | install package
+  tags: google-chrome
+  apt:
+    name: google-chrome-stable
+  when: ansible_distribution in ["Debian"]
+
+- name: software | google-chrome | install package
+  tags: google-chrome-unstable
   apt:
     name: google-chrome-stable
   when: ansible_distribution in ["Debian"]
@@ -31,11 +41,13 @@
   register: is_brave_keyring_installed
 
 - name: software | brave | add key
+  tags: brave
   ansible.builtin.shell:
     cmd: curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
   when: not is_brave_keyring_installed.stat.exists
 
 - name: software | brave | add repository
+  tags: brave
   apt_repository:
     repo: "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"
     filename: brave-browser-release
@@ -44,12 +56,14 @@
   when: ansible_distribution in ["Debian"]
 
 - name: software | brave | update sources (repo added or changed)
+  tags: brave
   apt:
     update_cache: yes
   changed_when: False
   when: brave_repo.changed
 
 - name: software | brave | install package
+  tags: brave
   apt:
     name: brave-browser
   when: ansible_distribution in ["Debian"]

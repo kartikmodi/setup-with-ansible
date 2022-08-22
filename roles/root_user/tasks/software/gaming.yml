@@ -1,0 +1,10 @@
+- name: software | gaming
+  tags: gaming
+  package:
+    name:
+      - steam # install manuall asks agreement
+      - mangohud
+      - goverlay
+#      - heroic game launcher
+#      -
+#      - lutris

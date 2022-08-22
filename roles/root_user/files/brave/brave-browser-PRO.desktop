@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=Brave Web Browser
+Name=Brave Web Browser PRO
 # Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
 # From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413.
 GenericName=Web Browser
@@ -105,7 +105,7 @@ Comment[vi]=Truy cập Internet
 Comment[zh_CN]=访问互联网
 Comment[zh_HK]=連線到網際網路
 Comment[zh_TW]=連線到網際網路
-Exec=/usr/bin/brave-browser-stable --enable-unsafe-webgpu --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,Vulkan --ignore-gpu-blacklist --enable-gpu-rasterization --enable-native-gpu-memory-buffers --enable-zero-copy --enable-logging --v=1 --enable-raw-draw --enable-drdc --disk-cache-size=2147483647 %U
+Exec=__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only /usr/bin/brave-browser-stable --enable-unsafe-webgpu --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,Vulkan --ignore-gpu-blacklist --enable-gpu-rasterization --enable-native-gpu-memory-buffers --enable-zero-copy --enable-logging --v=1 --enable-raw-draw --enable-drdc --disk-cache-size=2147483647 %U
 StartupNotify=true
 Terminal=false
 Icon=brave-browser
@@ -115,7 +115,7 @@ MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xht
 Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
-Name=New Window
+Name=New Window PRO
 Name[am]=አዲስ መስኮት
 Name[ar]=نافذة جديدة
 Name[bg]=Нов прозорец
@@ -166,10 +166,10 @@ Name[uk]=Нове вікно
 Name[vi]=Cửa sổ Mới
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=/usr/bin/brave-browser-stable --enable-unsafe-webgpu --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,Vulkan --ignore-gpu-blacklist --enable-gpu-rasterization --enable-native-gpu-memory-buffers --enable-zero-copy --enable-logging --v=1 --enable-raw-draw --enable-drdc --disk-cache-size=2147483647
+Exec=__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only /usr/bin/brave-browser-stable --enable-unsafe-webgpu --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,Vulkan --ignore-gpu-blacklist --enable-gpu-rasterization --enable-native-gpu-memory-buffers --enable-zero-copy --enable-logging --v=1 --enable-raw-draw --enable-drdc --disk-cache-size=2147483647
 
 [Desktop Action new-private-window]
-Name=New Incognito Window
+Name=New Incognito Window PRO
 Name[ar]=نافذة جديدة للتصفح المتخفي
 Name[bg]=Нов прозорец „инкогнито“
 Name[bn]=নতুন ছদ্মবেশী উইন্ডো
@@ -218,4 +218,4 @@ Name[uk]=Нове вікно в режимі анонімного перегля
 Name[vi]=Cửa sổ ẩn danh mới
 Name[zh_CN]=新建隐身窗口
 Name[zh_TW]=新增無痕式視窗
-Exec=/usr/bin/brave-browser-stable --enable-unsafe-webgpu --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,Vulkan --ignore-gpu-blacklist --enable-gpu-rasterization --enable-native-gpu-memory-buffers --enable-zero-copy --enable-logging --v=1 --enable-raw-draw --enable-drdc --disk-cache-size=2147483647
+Exec=__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only /usr/bin/brave-browser-stable --enable-unsafe-webgpu --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,Vulkan --ignore-gpu-blacklist --enable-gpu-rasterization --enable-native-gpu-memory-buffers --enable-zero-copy --enable-logging --v=1 --enable-raw-draw --enable-drdc --disk-cache-size=2147483647

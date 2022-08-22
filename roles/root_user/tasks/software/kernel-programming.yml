@@ -3,18 +3,18 @@
   package:
     name:
       - g++
-      - g++-10
+#      - g++-10
       - cpp
-      - cpp-10
-      - cpp-10-doc
-      - libstdc++-10-doc
-      - libstdc++-10-dev
-      - libstdc++6-10-dbg
+#      - cpp-10
+#      - cpp-10-doc
+#      - libstdc++-10-doc
+#      - libstdc++-10-dev
+#      - libstdc++6-10-dbg
       - gcc # gcc (Debian 10.3.0-9) 10.3.0
-      - gcc-10
-      - gcc-10-base
-      - gcc-10-doc
-      - gcc-10-source
+#      - gcc-10
+#      - gcc-10-base
+#      - gcc-10-doc
+#      - gcc-10-source
       - manpages-dev
       - build-essential
       - libc6 # standard c library
