@@ -1,0 +1,1 @@
+sudo apt install yakuake locate git vim htop apt-file

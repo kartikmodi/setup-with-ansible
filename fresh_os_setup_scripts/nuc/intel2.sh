@@ -1,0 +1,2 @@
+# sudo apt remove xserver-xorg-video-intel #discouraged package dont do unnecessarily
+sudo apt install firmware-linux-free intel-gpu-tools intel-media-va-driver-non-free libglu1-mesa  libvdpau1 libvdpau1:i386 libvdpau-va-gl1  mesa-utils  vainfo vdpau-driver-all vulkan-tools
