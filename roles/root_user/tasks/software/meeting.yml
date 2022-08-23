@@ -5,5 +5,5 @@
     - libusb-1.0-0-dev # scrcpy audio
     - libpulse-dev # scrcpy audio
     - meson #https://github.com/rom1v/usbaudio
-    -./Webex.deb
-    -./slack-desktop-4.23.0-amd64.deb
+#    -./Webex.deb
+#    -./slack-desktop-4.23.0-amd64.deb
