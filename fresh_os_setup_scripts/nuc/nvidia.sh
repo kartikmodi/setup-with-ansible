@@ -1,11 +1,12 @@
 #install nvidia drivers
-sudo apt install nvidia-detect
-nvidia-detect
+#sudo apt install nvidia-detect
+#nvidia-detect
 
-# Install nvidia driver manually and not inside a script/ansible as it may ask imp questions
-sudo apt install nvidia-driver
+sudo apt install -t bullseye-backports nvidia-driver nvidia-driver-libs:i386 nvidia-vdpau-driver:i386 nvidia-libopencl1 nvidia-libopencl1:i386 nvidia-vulkan-icd nvidia-vulkan-icd:i386  libnvoptix1
 
-sudo apt install nvidia-driver-libs:i386 nvidia-vaapi-driver nvidia-driver-libs:i386 nvidia-vaapi-driver:i386 nvidia-vdpau-driver:i386 nvidia-libopencl1 nvidia-libopencl1:i386 nvidia-vulkan-icd nvidia-vulkan-icd:i386 nvidia-vaapi-driver nvidia-vaapi-driver:i386 libnvoptix1
+nvidia-vaapi-driver
+nvidia-vaapi-driver:i386
+nvidia-vaapi-driver nvidia-vaapi-driver:i386
 # reboot mandated
 
 lsmod # check modules

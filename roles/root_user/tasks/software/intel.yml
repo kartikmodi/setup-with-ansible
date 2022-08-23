@@ -1,13 +1,10 @@
 - name: intel
   tags: intel
   package:
-    state: present
+    state:
     name:
       - intel-gpu-tools
       - intel-media-va-driver-non-free
-      - intel-microcode
-      - libdrm-intel1
-      - libdrm-intel1:i386
       - libegl-mesa0
       - libegl-mesa0:i386
       - libgl1-mesa-dri
@@ -19,11 +16,9 @@
       - libglvnd0:i386
       - libglx-mesa0
       - libglx-mesa0:i386
-      - libva-glx2
       - libvdpau1
       - libvdpau1:i386
       - libvdpau-va-gl1
-      - libvulkan1
       - mesa-utils
       - mesa-utils-bin
       - mesa-va-drivers
@@ -37,20 +32,23 @@
       - vulkan-tools
       - libgegl-common
       - libgegl-doc
-      - libegl1-mesa
-      - libegl1-mesa:i386
-      - libegl1
-      - libegl1:i386
-      - libva-drm2
-      - libva-drm2:i386
-      - libva-glx2
-      - libva-glx2:i386
-      - libva-x11-2
-      - libva-x11-2:i386
-      - libva2
       - gstreamer1.0-vaapi
       - gstreamer1.0-gl
       - gstreamer1.0-x
       - gstreamer1.0-gtk3
       - gstreamer1.0-tools
       - vdpauinfo
+      - libdrm-intel1
+      - libdrm-intel1:i386
+      - libegl1
+      - libegl1:i386
+      - intel-microcode/bullseye-backports
+      - libva-drm2/bullseye-backports
+      - libva-drm2:i386/bullseye-backports
+      - libva-glx2/bullseye-backports
+      - libva-glx2:i386/bullseye-backports
+      - libva-x11-2/bullseye-backports
+      - libva-x11-2:i386/bullseye-backports
+      - libva2/bullseye-backports
+      - libvulkan1/bullseye-backports
+      - libva-glx2/bullseye-backports
