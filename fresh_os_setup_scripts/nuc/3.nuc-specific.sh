@@ -6,7 +6,7 @@ sudo apt install build-essential
 
 # restart mandate
 # dep for liquorix
-sudo apt install -t bullseye-backports libelf-dev dkms
+sudo apt install libelf-dev/bullseye-backports dkms/bullseye-backports
 
 # custom kernel - liquorix
 curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash
