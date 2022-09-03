@@ -1,7 +1,7 @@
-- name: Install glances
+- name: Python packages
+  tags: pypy
   pip:
     name:
-      - gpustat
-      - glances[action,browser,cloud,cpuinfo,docker,export,folders,gpu,graph,ip,raid,snmp,web,wifi]
+      - gpustat #not useful
       - pipdeptree
 

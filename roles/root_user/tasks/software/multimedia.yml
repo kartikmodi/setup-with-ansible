@@ -14,17 +14,15 @@
       - vlc-plugin-svg
       - mpv
       - handbrake
-      - mplayer
       - obs-plugins
       - obs-studio
-#      - kdenlive
-#      - obs
-#      - inkspace
-#      - photoGIMP
-#      - Akira
-#    - #Krita
-#      - digiKam
-#      - darktable
+      - inkscape
+      - kdenlive
+      - krita
+      - akira
+      - digikam
+      - darktable
+#      - photoGIMP #https://github.com/Diolinux/PhotoGIMP
 #      strawberry music player
     state: present
 

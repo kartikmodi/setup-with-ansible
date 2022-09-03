@@ -4,11 +4,17 @@
   tags: power,battery
   package:
     name:
-      - tlp # sudo systemctl status tlp; sudo tlp-stat -s
-      - tlp-rdw
+#      - tlp # sudo systemctl status tlp; sudo tlp-stat -s
+#      - tlp-rdw
       - powertop
       - linux-cpupower
-      - cpupower-gui
+#      - cpupower-gui # download this manually if not available. V imp
       - cpufrequtils
+      - powerstat
+      - acpi
+      - upower
+      - gnome-power-manager
     state: present
 
+# https://github.com/frankenfruity/plasma-pstate # install this anyhow
+# watch -n 1 cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor

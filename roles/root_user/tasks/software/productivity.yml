@@ -3,16 +3,20 @@
   package:
     name:
       - yakuake
-      - byobu
+      - byobu #byobu-enable and byobu-enable-prompt after that. Check .bashrc and .profile after that
       - hollywood
-      - flameshot
+      - flameshot #https://github.com/flameshot-org/flameshot#keyboard-shortcuts #do configure shortcuts - import file
       - plasma-browser-integration
       - scrcpy
       - thunderbird
       - shellcheck
+      - bash-completion
     state: present
 
-- name: Install the spotify flatpak
+#  https://github.com/chubin/cheat.sh#installation
+# curl -s https://cht.sh/:cht.sh | sudo tee /usr/local/bin/cht.sh && sudo chmod +x /usr/local/bin/cht.sh
+- name: Calculator
+  tags: productivity
   community.general.flatpak:
     name: io.github.Qalculate
     state: present

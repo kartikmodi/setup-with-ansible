@@ -7,7 +7,7 @@
       - libwacom-common
       - xserver-xorg-input-wacom
       - xournalpp
-      - openboard
+#      - openboard
 
 
 

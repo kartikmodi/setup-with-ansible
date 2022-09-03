@@ -1,5 +1,5 @@
 - name: package management
-  tags: packages,system,settings
+  tags: package-management
   package:
     state: present
     name:

@@ -21,12 +21,14 @@
 - import_tasks: software/kde.yml
 - import_tasks: software/pip.yml
 - import_tasks: software/power-management.yml
-- import_tasks: software/meeting.yml
+- import_tasks: software/meetings.yml
 - import_tasks: software/backups.yml
 - import_tasks: software/fonts.yml
 - import_tasks: software/virtualization.yml
 - import_tasks: software/kernel-programming.yml
 - import_tasks: software/kernel-development.yml
+- import_tasks: software/wacom.yml
+- import_tasks: software/optimizations.yml
 #- import_tasks: software/dns.yml
 #- import_tasks: software/vpn.yml
 
