@@ -2,9 +2,9 @@
   tags: gaming
   package:
     name:
-      - steam # install manuall asks agreement
+      -  # install manuall asks agreement
       - mangohud
       - goverlay
 #      - heroic game launcher
 #      -
-#      - lutris
+#      - lutrisvcxvcxvcT

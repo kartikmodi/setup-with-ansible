@@ -1,6 +1,7 @@
-- name: system setup | development packages | install packages
-  tags: dev,development,packages,python
+- name: development packages
+  tags: devel
   package:
+    state: present
     name:
       - git
       - build-essential
@@ -19,8 +20,7 @@
       - android-sdk-common
       - android-sdk-platform-tools
       - android-sdk-platform-tools-common
-#      - https://rtyley.github.io/bfg-repo-cleaner/ add the steps
-      state: present
 
+#      - https://rtyley.github.io/bfg-repo-cleaner/ add the steps
 
 #Install draw.io package

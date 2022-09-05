@@ -8,8 +8,8 @@ sudo apt install build-essential
 # dep for liquorix
 sudo apt install libelf-dev/bullseye-backports dkms/bullseye-backports
 
-# custom kernel - liquorix
-curl 'https://liquorix.net/add-liquorix-repo.sh' | sudo bash
+# custom kernel - liquorix # dont u
+curl 'https://liquorix.net/add-liquorix-repo.sh' > kernel_custom.sh #dont install latest. Use 517 if 519 is latest
 sudo apt-get install -y linux-image-liquorix-amd64 linux-headers-liquorix-amd64
 # reboot mandated
 

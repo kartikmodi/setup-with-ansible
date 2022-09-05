@@ -10,3 +10,8 @@
       - libxapp1
       - xapps-common
       - xapp
+
+
+
+# ~/.config/plasma-workspace/env/
+# export QML_XHR_ALLOW_FILE_READ=1 # solves a problem in kde, errors in syslog

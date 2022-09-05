@@ -115,7 +115,7 @@ MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xht
 Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
-Name=New Window i915
+Name=New Window
 Name[am]=አዲስ መስኮት
 Name[ar]=نافذة جديدة
 Name[bg]=Нов прозорец

@@ -96,7 +96,10 @@ dom.event.clipboardevents.enabled false
 Reference -
 
 
-
+# dma  egl
+widget.dmabuf-textures.enabled true
+widget.dmabuf.force-enabled true
+gfx.x11-egl.force-enabled true
 
 # DNS over https 
 # https://ahadns.com/dns-over-https/

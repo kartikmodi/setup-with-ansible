@@ -1,5 +1,5 @@
-- name: software | fs management
-  tags: packages,workstation-packages
+- name: fs
+  tags: fs
   package:
     name:
       - gnome-disk-utility

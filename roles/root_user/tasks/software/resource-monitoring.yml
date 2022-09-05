@@ -4,27 +4,32 @@
     state: present
     name:
       - htop
+      - nvtop # GPU monitoring #https://github.com/Syllo/nvtop
+      - nvidia-smi # watch -n 1 nvidia-smi
       - iotop
       - "{{ lm_sensors_package }}" # run  after install sudo sensors-detect
       - neofetch
       - screenfetch
-      - intel-gpu-tools
+      - intel-gpu-tools #provides intel_gpu_top
       - iftop
-      - nethogs
+      - nethogs #per application network usage
       - sysstat
       - vnstat
       - procps
-      - lshw
+      - lshw #system information
       - iptraf
-#      - glances #Amazing
-      - hardinfo # Nice
-      - monitorix
+      - glances #Amazing full screen.
+      - hardinfo # very detailed
+      - monitorix #historical webui
       - iperf3
       - cbm
       - nload
       - bwm-ng
-      - atop
-      - conky
+      - atop #learn this very good
       - lshw-gtk
       - cpu-checker
+      - conky #overlay, not very good
+      - ncdu #storage analyzer
+      - nmon
+      - btop
 #      - fancontrol # Doesn't work on x1c

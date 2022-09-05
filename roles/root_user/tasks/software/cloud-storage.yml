@@ -1,12 +1,13 @@
-- name: system setup | development packages | install packages
-  tags: dev,development,packages,python
+- name: cloud-storage
+  tags: cloud-storage
   package:
     name:
-      - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
+      - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb #using for joplin, tampermonkey
       - dolphin-plugins # Configure Dolphin... > Services > Dropbox
-      - megasync
-      - dolphin-megasync
-      - rclone
-      - pcloud
-      - cozydrive
+      - megasync # not using anymore
+      - dolphin-megasync # not using anymore
+      - rclone # not using anymore
+      - pcloud # appimage installation
+      - cozydrive # not using anymore
+      - libfuse2 #pcloud requirement
     state: present

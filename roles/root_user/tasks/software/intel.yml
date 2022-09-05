@@ -42,13 +42,13 @@
       - libdrm-intel1:i386
       - libegl1
       - libegl1:i386
-      - intel-microcode/bullseye-backports
-      - libva-drm2/bullseye-backports
-      - libva-drm2:i386/bullseye-backports
-      - libva-glx2/bullseye-backports
-      - libva-glx2:i386/bullseye-backports
-      - libva-x11-2/bullseye-backports
-      - libva-x11-2:i386/bullseye-backports
-      - libva2/bullseye-backports
-      - libvulkan1/bullseye-backports
-      - libva-glx2/bullseye-backports
+      - intel-microcode
+      - libva-drm2
+      - libva-drm2:i386
+      - libva-glx2
+      - libva-glx2:i386
+      - libva-x11-2
+      - libva-x11-2:i386
+      - libva2
+      - libvulkan1
+      - libva-glx2

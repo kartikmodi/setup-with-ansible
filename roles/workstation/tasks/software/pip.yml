@@ -1,0 +1,7 @@
+- name: Python packages
+  tags: pypy
+  pip:
+    name:
+      - gpustat #not useful
+      - pipdeptree
+

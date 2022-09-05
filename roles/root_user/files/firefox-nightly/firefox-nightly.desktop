@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Firefox Nightly
 Comment=Web Browser
-Exec=/opt/firefox/firefox %u
+Exec=MOZ_DISABLE_RDD_SANDBOX=1 LIBVA_DRIVER_NAME=nvidia /opt/firefox/firefox %u
 Terminal=false
 Type=Application
 Icon=/opt/firefox/browser/chrome/icons/default/default128.png

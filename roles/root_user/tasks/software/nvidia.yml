@@ -3,72 +3,72 @@
   package:
     state: present
     name:
-      - libegl-nvidia0/bullseye-backports
-      - libegl-nvidia0:i386/bullseye-backports
-      - libgl1-nvidia-glvnd-glx/bullseye-backports
-      - libgl1-nvidia-glvnd-glx:i386/bullseye-backports
-      - libgles-nvidia1/bullseye-backports
-      - libgles-nvidia1:i386/bullseye-backports
-      - libgles-nvidia2/bullseye-backports
-      - libgles-nvidia2:i386/bullseye-backports
-      - libglx-nvidia0/bullseye-backports
-      - libglx-nvidia0:i386/bullseye-backports
-      - libnvidia-cbl/bullseye-backports
-      - libnvidia-cfg1/bullseye-backports
-      - libnvidia-compiler/bullseye-backports
-      - libnvidia-compiler:i386/bullseye-backports
+      - libegl-nvidia0
+      - libegl-nvidia0:i386
+      - libgl1-nvidia-glvnd-glx
+      - libgl1-nvidia-glvnd-glx:i386
+      - libgles-nvidia1
+      - libgles-nvidia1:i386
+      - libgles-nvidia2
+      - libgles-nvidia2:i386
+      - libglx-nvidia0
+      - libglx-nvidia0:i386
+      - libnvidia-cbl
+      - libnvidia-cfg1
+      - libnvidia-compiler
+      - libnvidia-compiler:i386
       - libnvidia-egl-wayland1
-      - libnvidia-eglcore/bullseye-backports
-      - libnvidia-eglcore:i386/bullseye-backports
-      - libnvidia-encode1/bullseye-backports
-      - libnvidia-encode1:i386/bullseye-backports
-      - libnvidia-glcore/bullseye-backports
-      - libnvidia-glcore:i386/bullseye-backports
-      - libnvidia-glvkspirv/bullseye-backports
-      - libnvidia-glvkspirv:i386/bullseye-backports
-      - libnvidia-ml1/bullseye-backports
-      - libnvidia-ptxjitcompiler1/bullseye-backports
-      - libnvidia-ptxjitcompiler1:i386/bullseye-backports
-      - libnvidia-rtcore/bullseye-backports
-      - libnvoptix1/bullseye-backports
-      - nvidia-alternative/bullseye-backports
-      - nvidia-detect/bullseye-backports
-      - nvidia-driver/bullseye-backports
-      - nvidia-driver-bin/bullseye-backports
-      - nvidia-driver-libs/bullseye-backports
-      - nvidia-driver-libs:i386/bullseye-backports
-      - nvidia-egl-common/bullseye-backports
-      - nvidia-egl-icd/bullseye-backports
-      - nvidia-egl-icd:i386/bullseye-backports
+      - libnvidia-eglcore
+      - libnvidia-eglcore:i386
+      - libnvidia-encode1
+      - libnvidia-encode1:i386
+      - libnvidia-glcore
+      - libnvidia-glcore:i386
+      - libnvidia-glvkspirv
+      - libnvidia-glvkspirv:i386
+      - libnvidia-ml1
+      - libnvidia-ptxjitcompiler1
+      - libnvidia-ptxjitcompiler1:i386
+      - libnvidia-rtcore
+      - libnvoptix1
+      - nvidia-alternative
+      - nvidia-detect
+      - nvidia-driver
+      - nvidia-driver-bin
+      - nvidia-driver-libs
+      - nvidia-driver-libs:i386
+      - nvidia-egl-common
+      - nvidia-egl-icd
+      - nvidia-egl-icd:i386
       - nvidia-installer-cleanup
       - nvidia-kernel-common
-      - nvidia-kernel-dkms/bullseye-backports
-      - nvidia-kernel-support/bullseye-backports
-      - nvidia-legacy-check/bullseye-backports
-      - nvidia-libopencl1/bullseye-backports
-      - nvidia-libopencl1:i386/bullseye-backports
-      - nvidia-modprobe/bullseye-backports
-      - nvidia-opencl-common/bullseye-backports
-      - nvidia-opencl-icd/bullseye-backports
-      - nvidia-opencl-icd:i386/bullseye-backports
+      - nvidia-kernel-dkms
+      - nvidia-kernel-support
+      - nvidia-legacy-check
+      - nvidia-libopencl1
+      - nvidia-libopencl1:i386
+      - nvidia-modprobe
+      - nvidia-opencl-common
+      - nvidia-opencl-icd
+      - nvidia-opencl-icd:i386
       - nvidia-persistenced
-      - nvidia-settings/bullseye-backports
-      - nvidia-smi/bullseye-backports
+      - nvidia-settings
+      - nvidia-smi
       - nvidia-support
-      - nvidia-vdpau-driver/bullseye-backports
-      - nvidia-vdpau-driver:i386/bullseye-backports
-      - nvidia-vulkan-common/bullseye-backports
-      - nvidia-vulkan-icd/bullseye-backports
-      - nvidia-vulkan-icd:i386/bullseye-backports
-      - xserver-xorg-video-nvidia/bullseye-backports
-      - libnvcuvid1/bullseye-backports
-      - libnvidia-encode1/bullseye-backports
-      - libcuda1/bullseye-backports
-      - libcuda1:i386/bullseye-backports
-      - libnvcuvid1:i386/bullseye-backports
-      - nvidia-cuda-mps/bullseye-backports
-      - libxnvctrl0/bullseye-backports
+      - nvidia-vdpau-driver
+      - nvidia-vdpau-driver:i386
+      - nvidia-vulkan-common
+      - nvidia-vulkan-icd
+      - nvidia-vulkan-icd:i386
+      - xserver-xorg-video-nvidia
+      - libnvcuvid1
+      - libnvidia-encode1
+      - libcuda1
+      - libcuda1:i386
+      - libnvcuvid1:i386
+      - nvidia-cuda-mps
+      - libxnvctrl0
 
 #
- #       - nvidia-vaapi-driver/bullseye-backports
-  #      - nvidia-vaapi-driver:i386/bullseye-backports
+ #       - nvidia-vaapi-driver
+  #      - nvidia-vaapi-driver:i386

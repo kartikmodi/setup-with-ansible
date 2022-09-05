@@ -6,6 +6,6 @@
 #      - biglybt
 #      - frostwire
 #      - tribler
-      - uget
+      - uget #https://github.com/ugetdm/uget-integrator/wiki/Installation#ubuntu--linux-mint
       - wget2
     state: present

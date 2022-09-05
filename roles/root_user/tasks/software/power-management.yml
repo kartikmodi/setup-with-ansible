@@ -4,11 +4,53 @@
   tags: power,battery
   package:
     name:
-      - tlp # sudo systemctl status tlp; sudo tlp-stat -s
-      - tlp-rdw
+#      - tlp # sudo systemctl status tlp; sudo tlp-stat -s
+#      - tlp-rdw
       - powertop
       - linux-cpupower
-      - cpupower-gui
+#      - cpupower-gui # download this manually if not available. V imp
       - cpufrequtils
+      - powerstat
+      - acpi
+      - upower
+      - gnome-power-manager
     state: present
 
+# https://github.com/frankenfruity/plasma-pstate # install this anyhow
+# probable dependecies installed
+#  sudo apt-get install libqt5positioning5 libqt5location5 qtlocation5-dev qtpositioning5-dev qml-module-qtlocation qml-module-qtpositioning
+#  qt5-graphicaleffects
+#  sudo apt install plasma-kdevelop plasma-workspace-dev libkf5plasma-dev plasma-desktop-dev
+#  #1661915355
+#  sudo apt install plasma-kdevelop plasma-workspace-dev libkf5plasma-dev
+#  #1661915360
+#  sudo apt install plasma-kdevelop plasma-workspace-dev plasma-desktop-dev
+#  #1661915367
+#  sudo apt install plasma-workspace-dev plasma-desktop-dev
+#  sudo apt install extra-cmake-modules
+#  sudo apt install  qtbase5-dev
+#  #1661914402
+#  sudo apt install  kdelibs5-dev
+#  #1661914406
+#  sudo apt install  kdelibs5
+#  #1661914410
+#  sudo apt install  qtbase5-dev
+#  sudo apt install kactivities-bin
+#  #1661914320
+#  sudo apt install libkf5activities-dev
+#  #1661914327
+#  sudo apt install libkf5activities-doc
+#  #1661914330
+#  sudo apt install libkf5activities5
+#  #1661914334
+#  sudo apt install qml-module-org-kde-activities
+#  #1661914227
+#  vim CMakeLists.txt
+#  #1661914340
+#  sudo apt install qml-module-org-kde-activities
+#  sudo apt install build-essential cmake libboost-system-dev libboost-thread-dev libboost-program-options-dev libboost-test-dev libeigen3-dev zlib1g-dev libbz2-dev liblzma-dev
+#  sudo apt install build-essential libkf5config-dev libkdecorations2-dev libqt5x11extras5-dev qtdeclarative5-dev extra-cmake-modules libkf5guiaddons-dev libkf5configwidgets-dev libkf5windowsystem-dev libkf5coreaddons-dev gettext
+
+
+# watch -n 1 cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+# explore thermald

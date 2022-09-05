@@ -28,9 +28,9 @@
   when: ansible_distribution in ["Debian"]
 
 - name: software | google-chrome | install package
-  tags: google-chrome-unstable
+  tags: google-chrome
   apt:
-    name: google-chrome-stable
+    name: google-chrome-unstable
   when: ansible_distribution in ["Debian"]
 
 # Brave

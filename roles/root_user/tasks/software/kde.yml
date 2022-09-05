@@ -1,5 +1,5 @@
-- name: software | install workstation distribution packages
-  tags: packages,workstation-packages
+- name: kde
+  tags: kde
   package:
     name:
       - libnotify-bin
@@ -12,4 +12,19 @@
       - smartmontools
 #      - hddtemp
       - qml-module-qtgraphicaleffects
-      - kde-config-tablet
+      - kde-config-tablet # for wacom
+    state: present
+
+#  https://store.kde.org/p/1833519 # cpu power usage in Watt
+# https://github.com/frankenfruity/plasma-pstate # install this anyhow
+
+#      - libkf5config-dev 
+#      - libkdecorations2-dev 
+#      - libqt5x11extras5-dev 
+#      - qtdeclarative5-dev 
+#      - extra-cmake-modules 
+#      - libkf5guiaddons-dev 
+#      - libkf5configwidgets-dev 
+#      - libkf5windowsystem-dev 
+#      - libkf5coreaddons-dev 
+#      - gettext 
