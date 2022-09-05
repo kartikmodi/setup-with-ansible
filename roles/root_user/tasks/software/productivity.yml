@@ -11,6 +11,7 @@
       - thunderbird
       - shellcheck
       - bash-completion
+      - xapp # joplin requirement
     state: present
 
 #  https://github.com/chubin/cheat.sh#installation
@@ -21,3 +22,6 @@
     name: io.github.Qalculate
     state: present
 #skreen-1.0.11.AppImage
+
+# JOPLING INSTALLATION
+# wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash

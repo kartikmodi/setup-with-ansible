@@ -3,7 +3,7 @@
   package:
     state: present
     name:
-      - snapd
+      - snapd #avoid, bad, proprietary server
       - flatpak
       - synaptic
       - software-properties-gtk
@@ -17,4 +17,4 @@
 # update to latest version, then run
 #- name: Install appimagelauncher
 #  apt:
-#    deb: https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher_2.2.0-travis995.0f91801.bionic_amd64.deb
+#    deb: https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher_2.2.0-travis995.0f91801.bionic_amd64.deb #NOT REALLY REQUIRED NOW, ONLY pcloud is appimage for now, and it updated by itself. Secondly this updater is not well maintained and no updated since 2020
