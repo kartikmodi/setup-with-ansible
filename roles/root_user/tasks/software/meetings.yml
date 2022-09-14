@@ -4,6 +4,32 @@
     state: latest
     deb: https://zoom.us/client/latest/zoom_amd64.deb
 
+#webcam setup
+#  https://www.dev47apps.com/droidcam/linux/
+
+
+# Droidcam intall
+#Steps
+# https://www.dev47apps.com/droidcam/linux/
+#  sudo apt install ./libappindicator3-1_0.4.92-7_amd64.deb ./libindicator3-7_0.5.0-4_amd64.deb
+
+# BEWARE THESE ARE OLD PACKAGES. NEW REPLACEMENT PACKAGEA are there.
+# When installed, they uninstalled those packages including solaar
+# Removing solaar (1.1.4+dfsg-1) ...
+#Removing gir1.2-ayatanaappindicator3-0.1 (0.5.91-1) ...
+#Removing remmina-plugin-vnc:amd64 (1.4.27+dfsg-2) ...
+#Removing remmina-plugin-secret:amd64 (1.4.27+dfsg-2) ...
+#Removing remmina-plugin-rdp:amd64 (1.4.27+dfsg-2) ...
+#Removing remmina (1.4.27+dfsg-2) ...
+#Removing libayatana-appindicator3-1 (0.5.91-1) ...
+
+ # these were removed and installed later again
+
+# do install libappindicator deps by downloading from debian
+#Configuration files paths
+#- - /etc/modprobe.d/droidcam.conf #effects on restast only, check instructions linux on website for insmod rmmod commands
+#- .config/droidcam #overwritten when droidcam closed, so make changes when app is closed
+
 
 #    - libusb-1.0-0-dev # scrcpy audio
 #    - libpulse-dev # scrcpy audio

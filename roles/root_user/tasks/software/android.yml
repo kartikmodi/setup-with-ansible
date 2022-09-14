@@ -1,0 +1,12 @@
+- name: android
+  tags: android
+  package:
+    state: present
+    name:
+      - android-sdk
+      - android-sdk-build-tools
+      - android-sdk-build-tools-common
+      - android-sdk-common
+      - android-sdk-platform-tools
+      - android-sdk-platform-tools-common
+      - scrcpy

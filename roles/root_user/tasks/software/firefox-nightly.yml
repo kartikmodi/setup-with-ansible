@@ -35,3 +35,5 @@
     src: files/firefox-nightly/firefox-nightly.desktop
     dest: /usr/share/applications/firefox-nightly.desktop
   when: not is_ff_desktop_entry_installed.stat.exists
+# Test with logs with this
+#MOZ_DISABLE_RDD_SANDBOX=1 LIBVA_DRIVER_NAME=nvidia /opt/firefox/firefox
