@@ -10,7 +10,7 @@
       - qml-module-qtlocation
       - qml-module-qtpositioning
       - smartmontools
-#      - hddtemp
+      #      - hddtemp
       - qml-module-qtgraphicaleffects
       - kde-config-tablet # for wacom
     state: present
@@ -28,3 +28,9 @@
 #      - libkf5windowsystem-dev 
 #      - libkf5coreaddons-dev 
 #      - gettext 
+
+#other plasmoids -
+#Resource Monitor (Fork)
+#THermal monitor
+#Public IP and VPN indicator (install after setting up vpn)
+#CPU power Monitor (shows cpu power consumption in watts)
