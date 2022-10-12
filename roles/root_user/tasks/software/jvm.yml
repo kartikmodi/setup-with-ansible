@@ -28,7 +28,7 @@
   when: sbt_repo.changed or sbt_old_repo.changed
 
 - name: jvm | install
-  tags: jvm
+  tags: java
   package:
     name:
       - openjdk-11-dbg
@@ -41,7 +41,7 @@
       - openjdk-11-jre
       - openjdk-11-source
       - scala
-      - sbt
+#      - sbt
     state: present
 
 

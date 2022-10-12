@@ -25,7 +25,7 @@
       - cbm
       - nload
       - bwm-ng
-      - atop #learn this very good
+#      - atop #learn this very good. not available anymore in debian testing repos
       - lshw-gtk
       - cpu-checker
       - conky #overlay, not very good

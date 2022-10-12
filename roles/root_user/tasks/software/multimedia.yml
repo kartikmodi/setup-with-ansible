@@ -27,3 +27,5 @@
     state: present
 
 #  flatpak install flathub com.github.wwmm.pulseeffects
+#sound bass boose equalizer
+#  https://github.com/Audio4Linux/JDSP4Linux

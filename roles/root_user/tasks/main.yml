@@ -19,7 +19,7 @@
 - import_tasks: software/downloads.yml
 - import_tasks: software/resource-monitoring.yml
 - import_tasks: software/kde.yml
-- import_tasks: software/pip.yml
+#- import_tasks: software/pip.yml
 - import_tasks: software/power-management.yml
 - import_tasks: software/meetings.yml
 - import_tasks: software/backups.yml
