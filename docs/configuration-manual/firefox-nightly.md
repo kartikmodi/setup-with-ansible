@@ -69,7 +69,7 @@ media.ffmpeg.vaapi.enabled true
 media.gpu-process-decoder true
 media.hardware-video-decoding.force-enabled true
 toolkit.tabbox.switchByScrolling true
-
+gfx.webrender.precache-shaders true
 
 Needed if whatsapp QR isn't working
 # network.http.spdy.websockets

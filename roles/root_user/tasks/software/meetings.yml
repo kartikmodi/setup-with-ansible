@@ -3,8 +3,8 @@
   apt:
     state: latest
     deb: https://zoom.us/client/latest/zoom_amd64.deb
-      v4l2loopback-utils
-    v4l2loopback-dkms
+      #v4l2loopback-utils
+   # v4l2loopback-dkms
 #webcam setup
 #  https://www.dev47apps.com/droidcam/linux/
 

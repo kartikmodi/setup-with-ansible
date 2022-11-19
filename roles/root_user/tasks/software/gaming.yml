@@ -2,7 +2,7 @@
   tags: gaming
   package:
     name:
-      -  # install manuall asks agreement
+    #  -  steam # install manuall asks agreement
       - mangohud
       - goverlay
 #      - heroic game launcher

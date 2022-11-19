@@ -1,0 +1,28 @@
+- name: amd-gpu
+  tags: amd-gpu
+  package:
+    state: present
+    name:
+      - pipewire-alsa
+      - pipewire-jack
+      - libspa-0.2-bluetooth
+      - wireplumber
+#      - pipewire-media-session- do not use
+      - pipewire-pulse
+#        pulseaudio-module-bluetooth remove this https://wiki.debian.org/PipeWire
+run after install
+#  systemctl --user --now enable wireplumber.service
+
+
+#  sudo apt install opencl-clhpp-headers opencl-c-headers pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1
+#  sudo apt install opencl-c-headers pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1
+#  sudo apt install opencl-clhpp-headers opencl-c-headers pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-
+#  sudo apt install pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1
+#  sudo apt install pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd
+#  sudo apt install pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev
+#  sudo apt install pocl-opencl-icd python3-pyopencl
+#  sudo apt install pocl-opencl-icd
+#  sudo apt install opencl-clhpp-headers opencl-c-headers pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl
+#  sudo apt install opencl-clhpp-headers opencl-c-headers  python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1
+#  sudo apt show pocl-opencl-icd
+#  sudo apt install opencl-clhpp-headers opencl-c-headers  python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1

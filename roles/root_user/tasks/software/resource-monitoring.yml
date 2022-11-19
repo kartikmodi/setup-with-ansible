@@ -5,7 +5,6 @@
     name:
       - htop
       - nvtop # GPU monitoring #https://github.com/Syllo/nvtop
-      - nvidia-smi # watch -n 1 nvidia-smi
       - iotop
       - "{{ lm_sensors_package }}" # run  after install sudo sensors-detect
       - neofetch
@@ -33,3 +32,4 @@
       - nmon
       - btop
 #      - fancontrol # Doesn't work on x1c
+# dont add nvidia-smi in this file because it installs nvidia driver as well
