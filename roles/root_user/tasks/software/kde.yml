@@ -34,3 +34,13 @@
 #THermal monitor by driglu4it  (do not install clearmartin one, that one crashes kde session and 6 years old)
 #Public IP and VPN indicator (install after setting up vpn)
 #CPU power Monitor (shows cpu power consumption in watts)
+
+# Pstate compilation dep checks
+# this worked finally
+# sudo apt install cmake extra-cmake-modules qtdeclarative5-dev libqt5x11extras5-dev libkf5iconthemes-dev libkf5plasma-dev libkf5windowsystem-dev libkf5declarative-dev libkf5xmlgui-dev libkf5activities-dev build-essential libxcb-util-dev libkf5wayland-dev git gettext libkf5archive-dev libkf5notifications-dev libxcb-util0-dev libsm-dev libkf5crash-dev libkf5newstuff-dev libxcb-shape0-dev libxcb-randr0-dev libx11-dev libx11-xcb-dev kirigami2-dev libwayland-dev libwayland-client0 plasma-wayland-protocols libqt5waylandclient5-dev qtwayland5-dev-tools
+
+# before that didn't worked
+# sudo apt install libkf5crash-dev kinit-dev libkf5globalaccel-dev libkf5kio-dev libkf5notifications-dev
+
+# before that as well
+# sudo apt install libkf5crash-dev kinit-dev kwin-dev

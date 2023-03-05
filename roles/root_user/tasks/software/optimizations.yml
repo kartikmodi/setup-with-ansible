@@ -10,8 +10,8 @@
 #      - #      - zram-tools
 
 
-
+#  $ git clone https://github.com/Nefelim4ag/Ananicy.git
+#  $ ./Ananicy/package.sh debian
+#  $ sudo dpkg -i ./Ananicy/ananicy-*.deb
 
 #      - https://github.com/Nefelim4ag/Ananicy #https://www.maketecheasier.com/control-apps-priorities-with-ananicy-linux/
-#  https://packages.debian.org/stretch/amd64/libindicator3-7/download
-#  https://packages:debian:org/buster/amd64/libappindicator3-1/download:

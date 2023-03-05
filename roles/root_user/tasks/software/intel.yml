@@ -1,7 +1,7 @@
 - name: intel
   tags: intel
   package:
-    state:
+    state: present
     name:
       - intel-gpu-tools
       - intel-media-va-driver-non-free

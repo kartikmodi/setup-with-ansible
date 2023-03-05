@@ -23,5 +23,6 @@
       - flex-doc
       - ncurses-dev
       - linux-perf
+      - qemu
     state: present
 

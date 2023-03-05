@@ -29,5 +29,7 @@
 # Install the extension pack after install installaiton of virtual box
 
 
+# Qemu install command used
+#  qemu-utils qemu-system-x86 qemu-system-gui libvirt-daemon-system libvirt-clients virt-manager libvirt0
 
 

@@ -29,6 +29,8 @@
 - import_tasks: software/kernel-development.yml
 - import_tasks: software/wacom.yml
 - import_tasks: software/optimizations.yml
+- import_tasks: software/android.yml
+
 #- import_tasks: software/dns.yml
 #- import_tasks: software/vpn.yml
 

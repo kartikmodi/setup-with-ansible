@@ -3,7 +3,7 @@
   package:
     state: present
     name:
-      - snapd #avoid, bad, proprietary server
+#      - snapd #avoid, bad, proprietary server
       - flatpak
       - synaptic
       - software-properties-gtk

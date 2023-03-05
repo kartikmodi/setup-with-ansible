@@ -7,7 +7,11 @@
       - libwacom-common
       - xserver-xorg-input-wacom
       - xournalpp
-#      - openboard
+      - openboard
+      - openboard-common
+      - openboard-contrib
+      - openboard-fonts-nonfree
+
 
 
 

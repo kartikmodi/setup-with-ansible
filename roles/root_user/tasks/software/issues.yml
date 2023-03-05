@@ -11,6 +11,13 @@
       - xapps-common
       - xapp
 
+- name: issues | tray indicator | steam | stremio | pcloud | droidcam
+  tags: issues
+  package:
+    state: present
+    name:
+#  https://packages.debian.org/stretch/amd64/libindicator3-7/download
+#  https://packages:debian:org/buster/amd64/libappindicator3-1/download:
 
 
 # ~/.config/plasma-workspace/env/

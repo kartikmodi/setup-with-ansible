@@ -7,11 +7,12 @@
       - hollywood
       - flameshot #https://github.com/flameshot-org/flameshot#keyboard-shortcuts #do configure shortcuts - import file
       - plasma-browser-integration
-      - scrcpy
+#      - scrcpy
       - thunderbird
       - shellcheck
       - bash-completion
       - xapp # joplin requirement
+      - pdfsam
     state: present
 
 #  https://github.com/chubin/cheat.sh#installation

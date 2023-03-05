@@ -57,6 +57,7 @@ browser.tabs.drawInTitlebar true
 # browser.tabs.extraDragSpace 
 dom.ipc.processCount 8 (2x of logical cores)
 dom.webgpu.enabled true
+gfx.webgpu.force-enabled true
 gfx.webrender.all true
 gfx.webrender.compositor true
 gfx.webrender.compositor.force-enabled true
