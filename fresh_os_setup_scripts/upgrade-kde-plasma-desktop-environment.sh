@@ -1,1 +1,1 @@
-sudo apt install plasma-workspace plasma-workspace-data
+sudo apt install  kde-plasma-desktop plasma-desktop plasma-desktop-data plasma-workspace plasma-workspace-data
