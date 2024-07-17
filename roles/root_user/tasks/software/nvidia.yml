@@ -13,7 +13,6 @@
       - libgles-nvidia2:i386
       - libglx-nvidia0
       - libglx-nvidia0:i386
-      - libnvidia-cbl
       - libnvidia-cfg1
       - libnvidia-compiler
       - libnvidia-compiler:i386

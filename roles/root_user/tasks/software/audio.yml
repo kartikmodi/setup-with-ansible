@@ -1,5 +1,5 @@
-- name: amd-gpu
-  tags: amd-gpu
+- name: audio
+  tags: audio
   package:
     state: present
     name:
@@ -7,10 +7,13 @@
       - pipewire-jack
       - libspa-0.2-bluetooth
       - wireplumber
-#      - pipewire-media-session- do not use
       - pipewire-pulse
+      - pipewire
+      - pipewire-audio
+      - pavucontrol
+      - # pipewire-media-session- do not use
 #        pulseaudio-module-bluetooth remove this https://wiki.debian.org/PipeWire
-run after install
+
 #  systemctl --user --now enable wireplumber.service
 
 

@@ -12,8 +12,9 @@
   tags: zoom
   community.general.flatpak:
     name: us.zoom.Zoom
-    state: latest
+    state: present
 
+Slack
 # Teams for linux
 #- name: software | teams | is-teams-installed
 #  tags: teams

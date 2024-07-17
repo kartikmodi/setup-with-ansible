@@ -20,3 +20,4 @@
       - xserver-xorg-video-all
       - libdrm-amdgpu1
       - clinfo
+      - ocl-icd-libopencl1

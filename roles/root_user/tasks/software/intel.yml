@@ -52,3 +52,8 @@
       - libva2
       - libvulkan1
       - libva-glx2
+      - firmware-linux
+      - firmware-linux-nonfree
+      - firmware-linux-free
+      - firmware-misc-nonfree
+

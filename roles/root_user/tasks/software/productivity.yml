@@ -11,7 +11,7 @@
       - thunderbird
       - shellcheck
       - bash-completion
-      - xapp # joplin requirement
+#      - xapp # joplin requirement
       - pdfsam
     state: present
 
