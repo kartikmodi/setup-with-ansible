@@ -48,9 +48,6 @@
           # settings = { "editor.tabSize" = 2; };
         };
       };
-    xdgModule = {
-  programs.xdg.enable = true;
-};
     in {
       homeConfigurations = {
         workstation = home-manager.lib.homeManagerConfiguration {
@@ -58,7 +55,6 @@
           modules = [
             baseModule
             vscodeModule
-	    xdgModule
           ];
         };
       };

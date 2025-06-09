@@ -1,1 +1,1 @@
-home-manager switch --flake ~/dotfiles
+home-manager switch --flake /home/workstation/dotfiles
