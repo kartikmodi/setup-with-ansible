@@ -5,6 +5,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    # explicitly declare lib from nixpkgs for usage as flake:lib
+    lib = {
+      url = "github:NixOS/nixpkgs/nixos-unstable";
+      inputs = {};
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, lib, ... }:
@@ -12,16 +17,20 @@
       system = "x86_64-linux";
       username = "workstation";
       homeDirectory = "/home/${username}";
-
-      pkgs = import nixpkgs { inherit system; };
+  pkgs = import nixpkgs {
+    inherit system;
+    config = {
+      allowUnfree = true;
+    };
+  };
 
       # You can split these into separate modules for modularity
       baseModule = {
         home.username = username;
         home.homeDirectory = homeDirectory;
 
-        home.packages = with pkgs; [ htop git ];
-
+        home.packages = with pkgs; [ htop ];
+        home.stateVersion = "25.05";
 
       };
 
@@ -29,19 +38,27 @@
         programs.vscode = {
           enable = true;
           package = pkgs.vscode;
-          # Add extensions, settings here if you want
-          # extensions = with pkgs.vscode-extensions; [ ms-python.python ];
+          extensions = with pkgs.vscode-extensions; [
+          timonwong.shellcheck
+          foxundermoon.shell-format
+          mads-hartmann.bash-ide-vscode
+          redhat.ansible
+          redhat.vscode-yaml
+        ];
           # settings = { "editor.tabSize" = 2; };
         };
       };
-
+    xdgModule = {
+  programs.xdg.enable = true;
+};
     in {
       homeConfigurations = {
         workstation = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs system;
+          inherit pkgs ;
           modules = [
             baseModule
             vscodeModule
+	    xdgModule
           ];
         };
       };
