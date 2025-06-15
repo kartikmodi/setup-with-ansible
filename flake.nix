@@ -29,21 +29,28 @@
         home.username = username;
         home.homeDirectory = homeDirectory;
 
-        home.packages = with pkgs; [ htop ];
+        home.packages = with pkgs; [ 
+          htop open-webui awscli2 kubectl 
+          #coder 
+         openvscode-server 
+        ];
         home.stateVersion = "25.05";
 
       };
-
+     
       vscodeModule = {
         programs.vscode = {
           enable = true;
           package = pkgs.vscode;
           extensions = with pkgs.vscode-extensions; [
+          jnoortheen.nix-ide
           timonwong.shellcheck
           foxundermoon.shell-format
           mads-hartmann.bash-ide-vscode
           redhat.ansible
           redhat.vscode-yaml
+	 # ms-vscode.remote-server # Install this with code --install-extension ms-vscode.remote-server instead
+          ms-vscode-remote.remote-ssh
         ];
           # settings = { "editor.tabSize" = 2; };
         };
@@ -54,7 +61,7 @@
           inherit pkgs ;
           modules = [
             baseModule
-            vscodeModule
+            vscodeModule 
           ];
         };
       };
