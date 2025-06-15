@@ -49,7 +49,7 @@
           mads-hartmann.bash-ide-vscode
           redhat.ansible
           redhat.vscode-yaml
-	 # ms-vscode.remote-server # Install this with code --install-extension ms-vscode.remote-server instead
+	        # ms-vscode.remote-server # Install this with code --install-extension ms-vscode.remote-server instead
           ms-vscode-remote.remote-ssh
         ];
           # settings = { "editor.tabSize" = 2; };
