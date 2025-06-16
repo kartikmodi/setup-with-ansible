@@ -30,15 +30,16 @@
         home.homeDirectory = homeDirectory;
 
         home.packages = with pkgs; [ 
-          htop open-webui awscli2 kubectl 
+          htop open-webui awscli2 kubectl byobu nvtop nvitop 
           #coder 
          openvscode-server 
+         llama-cpp
         ];
         home.stateVersion = "25.05";
 
       };
      
-      vscodeModule = {
+      vscodeModule = {y
         programs.vscode = {
           enable = true;
           package = pkgs.vscode;
@@ -51,6 +52,7 @@
           redhat.vscode-yaml
 	        # ms-vscode.remote-server # Install this with code --install-extension ms-vscode.remote-server instead
           ms-vscode-remote.remote-ssh
+          saoudrizwan.claude-dev
         ];
           # settings = { "editor.tabSize" = 2; };
         };
