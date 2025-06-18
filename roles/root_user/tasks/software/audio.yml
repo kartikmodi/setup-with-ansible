@@ -1,3 +1,4 @@
+# Refer: https://wiki.debian.org/PipeWire#Debian_12
 - name: audio
   tags: audio
   package:
@@ -10,22 +11,7 @@
       - pipewire-pulse
       - pipewire
       - pipewire-audio
-      - pavucontrol
-      - # pipewire-media-session- do not use
-#        pulseaudio-module-bluetooth remove this https://wiki.debian.org/PipeWire
+       # pipewire-media-session- do not use - add code to remove this
+      #  pulseaudio-module-bluetooth remove this - add code to remove this
 
 #  systemctl --user --now enable wireplumber.service
-
-
-#  sudo apt install opencl-clhpp-headers opencl-c-headers pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1
-#  sudo apt install opencl-c-headers pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1
-#  sudo apt install opencl-clhpp-headers opencl-c-headers pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-
-#  sudo apt install pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1
-#  sudo apt install pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd
-#  sudo apt install pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev
-#  sudo apt install pocl-opencl-icd python3-pyopencl
-#  sudo apt install pocl-opencl-icd
-#  sudo apt install opencl-clhpp-headers opencl-c-headers pocl-opencl-icd python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl
-#  sudo apt install opencl-clhpp-headers opencl-c-headers  python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1
-#  sudo apt show pocl-opencl-icd
-#  sudo apt install opencl-clhpp-headers opencl-c-headers  python3-pyopencl ocl-icd-opencl-dev mesa-opencl-icd ocl-icd-libopencl1

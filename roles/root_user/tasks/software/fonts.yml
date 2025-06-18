@@ -1,8 +1,0 @@
-- name: fonts
-  tags: fonts
-  package:
-    name:
-      - fonts-indic # india local langs
-      - ttf-mscorefonts-installer #ms fonts nonfree
-      - poppler-utils # for pdffonts
-    state: present

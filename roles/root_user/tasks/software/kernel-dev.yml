@@ -11,18 +11,42 @@
       - ccache
       - bison
       - libelf-dev
-      - git
       - make-doc
       - make
       - bison-doc
       - bison
-      - cmake
-      - cmake-doc
       - libssl-dev
       - flex
       - flex-doc
       - ncurses-dev
       - linux-perf
       - qemu
+      - dkms
+      - pandoc
+      - texlive
+      - freerdp2-x11
+      - g++
+      - cpp
+      - gcc
+      - manpages-dev
+      - libc6 # standard c library
+      - libc6-dbg # debugging symbols
+      - libc6-dev
+      - glibc-doc
+      - glibc-source
+      - glibc-doc-reference
+      - make
+      - make-doc
+      - dpkg-dev
+      - linux-source
+      - cmake-curses-gui
+      - cmake
+      - cmake-data
+      - cmake-doc
+      - cmake-qt-gui
+      - gdb-doc
+      - gdb
+      - gdb-source
+      - cscope
     state: present
 

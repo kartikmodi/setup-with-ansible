@@ -1,0 +1,20 @@
+- name: misc
+  tags: misc
+  package:
+    name:
+      - dconf-editor
+      - simplescreenrecorder
+      - mailutils
+      - timeshift #backup and restore
+      - fonts-indic # india local langs
+      - ttf-mscorefonts-installer #ms fonts nonfree
+      - poppler-utils # for pdffonts
+      - colordiff
+      - curl
+      - lsof
+      - net-tools
+      - nmap
+      - traceroute
+      - dkms
+      - rfkill
+      - locate

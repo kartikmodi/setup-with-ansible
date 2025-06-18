@@ -2,17 +2,33 @@
   tags: kde
   package:
     name:
-      - libnotify-bin
-      - libqt5positioning5
-      - libqt5location5
-      - qtlocation5-dev
-      - qtpositioning5-dev
-      - qml-module-qtlocation
-      - qml-module-qtpositioning
-      - smartmontools
+      # - libnotify-bin
+      # - libqt5positioning5
+      # - libqt5location5
+      # - qtlocation5-dev
+      # - qtpositioning5-dev
+      # - qml-module-qtlocation
+      # - qml-module-qtpositioning
+      # - smartmontools
       #      - hddtemp
-      - qml-module-qtgraphicaleffects
+      # - qml-module-qtgraphicaleffects
       - kde-config-tablet # for wacom
+      - dolphin-plugins # Configure Dolphin... > Services > Dropbox
+      - dolphin-megasync # not using anymore
+      - plasma-browser-integration
+      - gnome-disk-utility
+      - gparted
+      - wireplumber #audio until Debian 13, replaces pipewire-media-session
+      - libwacom-bin
+      - libwacom-common
+      - xserver-xorg-input-wacom
+      - xournalpp
+      - openboard
+      - openboard-common
+      - openboard-contrib
+      - openboard-fonts-nonfree
+      - yakuake
+
     state: present
 
 #  https://store.kde.org/p/1833519 # cpu power usage in Watt

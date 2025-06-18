@@ -2,37 +2,15 @@
 - include_vars: "{{ ansible_distribution }}.yml"
   tags: always
 
-- import_tasks: software/jvm.yml
-- import_tasks: software/intel.yml
-- import_tasks: software/packages-utilities.yml
-- import_tasks: software/development-packages.yml
-- import_tasks: software/vim.yml
-- import_tasks: software/pythonic.yml
-- import_tasks: software/misc-packages.yml
-- import_tasks: software/resource-monitoring.yml
-- import_tasks: software/package-management.yml
-- import_tasks: software/browsers-with-apt.yml
-- import_tasks: software/firefox-nightly.yml
-- import_tasks: software/productivity.yml
-#- import_tasks: software/snaps.yml
-- import_tasks: software/multimedia.yml
-- import_tasks: software/downloads.yml
-- import_tasks: software/resource-monitoring.yml
+# - import_tasks: software/audio.yml- Fix this 
+# - import_tasks: software/intel.yml
 - import_tasks: software/kde.yml
-#- import_tasks: software/pip.yml
-- import_tasks: software/power-management.yml
-- import_tasks: software/meetings.yml
-- import_tasks: software/backups.yml
-- import_tasks: software/fonts.yml
-- import_tasks: software/virtualization.yml
-- import_tasks: software/kernel-programming.yml
-- import_tasks: software/kernel-development.yml
-- import_tasks: software/wacom.yml
+- import_tasks: software/kernel-dev.yml
+- import_tasks: software/misc.yml
+# - import_tasks: software/nvidia.yml
 - import_tasks: software/optimizations.yml
-- import_tasks: software/android.yml
-
-#- import_tasks: software/dns.yml
-#- import_tasks: software/vpn.yml
-
-
+# - import_tasks: software/power.yml
+- import_tasks: software/remote.yml
+- import_tasks: software/monitoring.yml
+- import_tasks: software/virtualization.yml
 

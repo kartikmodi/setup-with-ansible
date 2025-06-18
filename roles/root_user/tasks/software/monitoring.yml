@@ -6,10 +6,9 @@
       - htop
       - nvtop # GPU monitoring #https://github.com/Syllo/nvtop
       - iotop
-      - "{{ lm_sensors_package }}" # run  after install sudo sensors-detect
+      - lm-sensors
       - neofetch
       - screenfetch
-      - intel-gpu-tools #provides intel_gpu_top
       - iftop
       - nethogs #per application network usage
       - sysstat
@@ -24,7 +23,7 @@
       - cbm
       - nload
       - bwm-ng
-#      - atop #learn this very good. not available anymore in debian testing repos
+      - atop
       - lshw-gtk
       - cpu-checker
       - conky #overlay, not very good

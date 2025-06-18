@@ -1,35 +1,14 @@
-- name: virtualization | virtualbox | add key
-  tags: virtualization
-  apt_key:
-    url: https://www.virtualbox.org/download/oracle_vbox_2016.asc
-    state: present
-
-- name: virtualization | virtualbox | add repository
-  tags: virtualization
-  apt_repository:
-    repo: deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bullseye contrib
-    state: present
-    filename: virtualbox
-  register: virtualbox_repo
-
-- name: virtualization | virtualbox | repo added or changed
-  tags: virtualization
-  apt:
-    update_cache: yes
-  changed_when: False
-  when: virtualbox_repo.changed
-
-- name: virtualization | virtualbox | install
+- name: virtualization 
   tags: virtualization
   package:
     name:
-      - virtualbox-6.1
+      - qemu-utils
+      - qemu-system-x86
+      - qemu-system-gui
+      - libvirt-daemon-system 
+      - libvirt-clients
+      - virt-manager
+      - libvirt0
     state: present
-
-# Install the extension pack after install installaiton of virtual box
-
-
-# Qemu install command used
-#  qemu-utils qemu-system-x86 qemu-system-gui libvirt-daemon-system libvirt-clients virt-manager libvirt0
 
 

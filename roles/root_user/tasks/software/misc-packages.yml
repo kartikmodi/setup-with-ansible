@@ -1,9 +1,0 @@
-- name: misc
-  tags: misc
-  package:
-    name:
-      - dconf-editor
-      - pavucontrol
-      - simplescreenrecorder
-      - s
-      - mailutils

@@ -1,5 +1,0 @@
-- name: snaps
-  tags: snaps
-  snap:
-    name: authy
-    state: present
