@@ -3,7 +3,6 @@
   package:
     state: present
     name:
-      - https://github.com/rustdesk/rustdesk/releases/download/1.1.9/rustdesk-1.1.9.deb
 #      DWService
 #      https://www.dwservice.net/en/download.html
       - xrdp # The rdp server which can share X.org session (new only else black screen) or current one with VNC by acting as a proxy

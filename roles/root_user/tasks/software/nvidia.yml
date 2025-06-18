@@ -68,4 +68,5 @@
       - nvidia-cuda-mps
       - libxnvctrl0
       - nvidia-vaapi-driver #FF requirement for vaapi video acceleration
+      - nvtop
   #      - nvidia-vaapi-driver:i386

@@ -6,8 +6,8 @@
       - oomd
       - schedtool # For ananicy below
       - preload
+      #      - #      - zram-tools
     state: present
-#      - #      - zram-tools
 
 
 #  $ git clone https://github.com/Nefelim4ag/Ananicy.git
