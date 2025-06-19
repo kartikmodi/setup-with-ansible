@@ -15,13 +15,18 @@
       - firmware-linux
       - firmware-linux-nonfree
       - firmware-linux-free
-      - bash-completion
+      - bash-completion 
       - gnupg
       - curl
       - wget2
       - wget
       - lsb-release
       - ca-certificates
+          #       - awk
+          # - grep
+          # - sed
+          # - tar
+
       #       - rickslab-gpu-utils
       # - libgl1-mesa-dri
       # - libglx-mesa0
