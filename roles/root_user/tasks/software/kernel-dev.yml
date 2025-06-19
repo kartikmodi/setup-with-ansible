@@ -1,10 +1,9 @@
 # Refer https://medium.com/@daeseok.youn/prepare-the-environment-for-developing-linux-kernel-with-qemu-c55e37ba8ade
-- name: system setup | kernel development | install packages
+- name: system | kernel development
   tags: kernel-development
   package:
     name:
       - build-essential
-#      - kernel-package
       - fakeroot
       - libncurses5-dev
       - libssl-dev
@@ -20,11 +19,7 @@
       - flex-doc
       - ncurses-dev
       - linux-perf
-      - qemu
       - dkms
-      - pandoc
-      - texlive
-      - freerdp2-x11
       - g++
       - cpp
       - gcc

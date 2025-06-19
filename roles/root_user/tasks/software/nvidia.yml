@@ -69,4 +69,8 @@
       - libxnvctrl0
       - nvidia-vaapi-driver #FF requirement for vaapi video acceleration
       - nvtop
+      - nvidia-kernel-dkms
+      - nvidia-cuda-toolkit
+      - nvidia-driver-bin
+      - nvidia-driver-full
   #      - nvidia-vaapi-driver:i386

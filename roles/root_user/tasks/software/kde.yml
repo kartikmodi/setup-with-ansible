@@ -14,11 +14,10 @@
       # - qml-module-qtgraphicaleffects
       - kde-config-tablet # for wacom
       - dolphin-plugins # Configure Dolphin... > Services > Dropbox
-      - dolphin-megasync # not using anymore
+      # - dolphin-megasync # find another way to get this
       - plasma-browser-integration
       - gnome-disk-utility
       - gparted
-      - wireplumber #audio until Debian 13, replaces pipewire-media-session
       - libwacom-bin
       - libwacom-common
       - xserver-xorg-input-wacom

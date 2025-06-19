@@ -1,16 +1,13 @@
-# Load distro-specific variables
-- include_vars: "{{ ansible_distribution }}.yml"
-  tags: always
-
-# - import_tasks: software/audio.yml- Fix this 
-# - import_tasks: software/intel.yml
+- import_tasks: software/audio.yml
+- import_tasks: software/init.yml
+- import_tasks: software/intel.yml
 - import_tasks: software/kde.yml
 - import_tasks: software/kernel-dev.yml
 - import_tasks: software/misc.yml
 # - import_tasks: software/nvidia.yml
 - import_tasks: software/optimizations.yml
 # - import_tasks: software/power.yml
-- import_tasks: software/remote.yml
+# - import_tasks: software/remote.yml
 - import_tasks: software/monitoring.yml
 - import_tasks: software/virtualization.yml
 

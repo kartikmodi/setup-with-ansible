@@ -32,4 +32,5 @@
       - btop
       - rsyslog
 #      - fancontrol # Doesn't work on x1c
-# dont add nvidia-smi in this file because it installs nvidia driver as well
+
+# Run sensors for config generation

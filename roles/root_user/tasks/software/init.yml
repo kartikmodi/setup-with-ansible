@@ -5,7 +5,8 @@
     name:
       - git
       - build-essential
-      - linux-headers
+      - linux-headers-amd64
+      - linux-image-amd64
       - dkms
       - flatpak
       - apt-rdepends
@@ -14,8 +15,15 @@
       - firmware-linux
       - firmware-linux-nonfree
       - firmware-linux-free
-      - firmware-amd-graphics
-      - firmware-misc-nonfree
+      - bash-completion
+                - gnupg
+          - curl
+          - wget
+          - lsb-release
+          - ca-certificates
+
+      # - firmware-amd-graphics
+      # - firmware-misc-nonfree
       #       - rickslab-gpu-utils
       # - libgl1-mesa-dri
       # - libglx-mesa0
