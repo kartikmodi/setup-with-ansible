@@ -16,23 +16,18 @@
       - firmware-linux-nonfree
       - firmware-linux-free
       - bash-completion
-                - gnupg
-          - curl
-          - wget
-          - lsb-release
-          - ca-certificates
-
-      # - firmware-amd-graphics
-      # - firmware-misc-nonfree
+      - gnupg
+      - curl
+      - wget2
+      - wget
+      - lsb-release
+      - ca-certificates
       #       - rickslab-gpu-utils
       # - libgl1-mesa-dri
       # - libglx-mesa0
-      # - 
       # - xserver-xorg-video-all
       # - libdrm-amdgpu1
       # - clinfo
       # - ocl-icd-libopencl1
-
-
 # Add step for this when flatpak is installed
 # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo

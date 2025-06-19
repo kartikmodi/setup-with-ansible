@@ -1,6 +1,6 @@
 ---
 # tasks to complete before running roles
-- hosts: 127.0.0.1
+- hosts: localhost
   tags: always
   become: true
 #  connection: local
@@ -11,7 +11,7 @@
       changed_when: False
 
 # run roles
-- hosts: 127.0.0.1
+- hosts: localhost
   tags: root_user
   become: true
   #  become_user: workstation
@@ -19,6 +19,12 @@
 #  become: true
   roles:
     - root_user
+    - geerlingguy.docker
+
+  vars:
+    docker_users:
+      - "workstation"
+
 #    - role: workstation
 #      become: yes
 #      become_user: workstation
