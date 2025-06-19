@@ -1,1 +1,0 @@
-sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/*

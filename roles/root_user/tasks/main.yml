@@ -10,4 +10,3 @@
 # - import_tasks: software/remote.yml
 - import_tasks: software/monitoring.yml
 - import_tasks: software/virtualization.yml
-
