@@ -1,6 +1,15 @@
 {
+  pkgs,
+  username,
+  nixgl,
+  nixglPkgs,
+  lib,
+  ...
+}:
+
+{
   home.username = username;
-  home.homeDirectory = homeDirectory;
+  home.homeDirectory = "/home/${username}";
   # home.backupFileExtension = "backup";
 
   home.packages = with pkgs; [
@@ -25,6 +34,8 @@
     open-webui
     librechat
     warp-terminal
+    chatbox
+    private-gpt
     # text-generation-webui
 
     # Version and environment managers
@@ -145,9 +156,18 @@
       ms-vscode-remote.remote-ssh
       ms-vscode-remote.remote-ssh-edit
       saoudrizwan.claude-dev
+      # roo code
     ];
     userSettings = {
+      "yaml.format.enable" = true;
+      "yaml.validate" = true;
+      "editor.defaultFormatter" = "redhat.vscode-yaml";
+      "editor.formatOnSave" = true;
       "bashIde.explainshellEndpoint" = "https://explainshell.com/"; # host explainshell if things are slower and useful
+      "[nix]" = {
+        "editor.defaultFormatter" = "jnoortheen.nix-ide";
+      };
+
     };
     # settings = { "editor.tabSize" = 2; };
   };
@@ -228,5 +248,29 @@
       fi
     '';
   };
+
+  home.activation.flatpakSetup = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  '';
+
+  home.activation.flatpakApps = lib.hm.dag.entryAfter [ "flatpakSetup" ] ''
+      apps=(
+      # AI
+      io.github.qwersyk.Newelle
+      com.jeffser.Alpaca
+      io.gitlab.theevilskeleton.Upscaler
+      io.gpt4all.gpt4all
+      com.cherry_ai.CherryStudio
+
+      # Productivity
+      io.github.Qalculate.qalculate-qt
+
+      # Files
+      io.kapsa.drive
+    )
+    for app in "''${apps[@]}"; do
+      flatpak install --user -y flathub "$app"
+    done
+  '';
 
 }

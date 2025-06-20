@@ -22,6 +22,12 @@
     docker_users:
       - "workstation"
 
-- hosts: vm
-  become: true
-  roles: k3s-io.k3s-ansible.k3s-server
+# - hosts: vm
+#   become: true
+#   roles: 
+#   - k3s-io.k3s-ansible.k3s-server
+
+# - hosts: nas
+#   become: true
+#   roles: 
+#   - k3s-io.k3s-ansible.k3s-server

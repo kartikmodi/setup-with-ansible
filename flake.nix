@@ -25,7 +25,6 @@
     let
       system = "x86_64-linux";
       username = "workstation";
-      homeDirectory = "/home/${username}";
       pkgs = import nixpkgs {
         inherit system;
         config = {
@@ -38,9 +37,17 @@
       homeConfigurations = {
         workstation = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
+          extraSpecialArgs = {
+            inherit
+              pkgs
+              username
+              nixgl
+              nixglPkgs
+              ;
+          };
+
           modules = [
             ./home.nix
-            { home.username = username; }
           ];
         };
       };
